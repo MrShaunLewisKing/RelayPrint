@@ -2,7 +2,7 @@
 
 // Preline UI Free Block: Connected Split Surface with Central Node
 // Category: Marketing → Split Feature Surfaces
-// Adapted for RelayPrint: One unified 50/50 container with central "ROUTE & COORDINATE" marker and subtle entrance motion
+// Brand: PrintExchange (One unified 50/50 container with central "ROUTE & COORDINATE" marker)
 
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
@@ -120,7 +120,7 @@ export function HomePartners() {
                   Have print capacity?
                 </h3>
                 <p className="mt-3 text-base text-gray-600 leading-relaxed">
-                  For independent manufacturing facilities interested in filling schedule gaps with verified jobs.
+                  For independent manufacturing facilities interested in working with PrintExchange to fill schedule gaps.
                 </p>
               </div>
 
@@ -150,7 +150,7 @@ export function HomePartners() {
 
           </div>
 
-          {/* CENTRAL RELAYPRINT MARKER SITTING DIRECTLY ON THE DIVIDING LINE */}
+          {/* CENTRAL PRINTEXCHANGE MARKER SITTING DIRECTLY ON THE DIVIDING LINE */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden md:flex flex-col items-center pointer-events-none z-20">
             <div
               className={`size-10 rounded-full bg-[#101426] border-2 border-white shadow-md flex items-center justify-center transition-transform duration-500 ${

@@ -3,7 +3,7 @@
 // Preline UI Free Primitive: Step Sequence & Timeline Rail
 // Category: Marketing → Timeline / Process Primitives
 // Source: https://preline.co/docs/components/timeline.html
-// Adapted for RelayPrint: Compact Horizontal Conceptual Routing Rail (PRINT DEMAND → RELAYPRINT → PRODUCTION)
+// Brand: PrintExchange (PRINT DEMAND → PRINTEXCHANGE → PRODUCTION)
 
 import React, { useEffect, useRef, useState } from 'react';
 
@@ -88,7 +88,7 @@ export function HomeValueRow() {
               </div>
             </div>
 
-            {/* Stage 2: RelayPrint (Center Focal Node) */}
+            {/* Stage 2: PrintExchange (Center Focal Node) */}
             <div className="flex md:flex-col items-start md:items-center text-left md:text-center gap-4 md:gap-3">
               <div className="size-11 rounded-full bg-[#5747E8] text-white flex items-center justify-center font-bold text-xs shrink-0 shadow-sm shadow-indigo-500/25 ring-4 ring-violet-50">
                 <svg
@@ -114,7 +114,7 @@ export function HomeValueRow() {
                   Coordination
                 </span>
                 <h3 className="text-base font-bold text-[#101426]">
-                  RelayPrint
+                  PrintExchange
                 </h3>
                 <p className="mt-1 text-sm text-gray-600 leading-relaxed max-w-xs md:mx-auto">
                   Requirements are reviewed and directed toward suitable production capability.

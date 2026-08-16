@@ -64,9 +64,9 @@ export const WORKFLOW_STAGES: WorkflowStage[] = [
     step: 'Stage 05',
     number: '05',
     title: 'Coordinate',
-    shortDesc: 'RelayPrint helps keep the workflow moving between the relevant parties.',
+    shortDesc: 'PrintExchange helps keep the workflow moving between the relevant parties.',
     detail:
-      'Throughout manufacturing and final delivery, RelayPrint acts as the central coordination layer, monitoring milestone progression and handling partner communication.',
+      'Throughout manufacturing and final delivery, PrintExchange acts as the central coordination layer, monitoring milestone progression and handling partner communication.',
     actions: [
       'Production milestone monitoring',
       'Handling exceptions, queries, or schedule updates',

@@ -8,7 +8,7 @@ import { PrintRegistrationMarks } from '@/components/ui/PrintRegistrationMarks';
 
 export const metadata: Metadata = {
   title: 'Draft Website Terms | Legal Review',
-  description: 'Draft Website Terms of Use for RelayPrint, subject to formal legal review and confirmation.'
+  description: 'Draft Website Terms of Use for PrintExchange, subject to formal legal review and confirmation.'
 };
 
 export default function TermsPage() {
@@ -44,14 +44,14 @@ export default function TermsPage() {
                 By accessing and using this website, you agree to be bound by these Website Terms of Use. If you do not agree with any part of these terms, you should discontinue using the site immediately.
               </p>
               <p>
-                This website is operated by <strong>[Company Legal Entity Name]</strong> (trading as <strong>RelayPrint</strong>).
+                This website is operated by <strong>[Company Legal Entity Name]</strong> (trading as <strong>PrintExchange</strong>).
               </p>
             </section>
 
             <section className="space-y-3">
               <h2 className="text-lg font-bold text-foreground">2. Informational Purpose & Non-Ecommerce Nature</h2>
               <p>
-                This public website is published solely for informational and B2B introductory purposes to explain RelayPrint’s print-routing and production coordination model.
+                This public website is published solely for informational and B2B introductory purposes to explain PrintExchange’s print-routing and production coordination model.
               </p>
               <ul className="list-disc pl-5 space-y-1">
                 <li><strong>No Online Ordering:</strong> This website does not offer consumer checkout, shopping carts, direct artwork uploading for binding print orders, or instant commercial contracts.</li>
@@ -76,7 +76,7 @@ export default function TermsPage() {
             <section className="space-y-3">
               <h2 className="text-lg font-bold text-foreground">5. Disclaimer of Warranties & Limitation of Liability</h2>
               <p>
-                While we endeavor to keep the website information accurate and up to date, the website is provided &quot;as is&quot; without warranties of any kind. To the fullest extent permitted by English law, RelayPrint excludes all liability for any direct, indirect, or consequential loss arising from the use of this website.
+                While we endeavor to keep the website information accurate and up to date, the website is provided &quot;as is&quot; without warranties of any kind. To the fullest extent permitted by English law, PrintExchange excludes all liability for any direct, indirect, or consequential loss arising from the use of this website.
               </p>
             </section>
 
@@ -90,7 +90,7 @@ export default function TermsPage() {
             <section className="space-y-3">
               <h2 className="text-lg font-bold text-foreground">7. Contact Information</h2>
               <p>
-                Enquiries regarding these draft terms should be directed to <code>[legal@relayprint.co.uk]</code>.
+                Enquiries regarding these draft terms should be directed to <code>[legal@printexchange.co.uk]</code>.
               </p>
             </section>
           </div>

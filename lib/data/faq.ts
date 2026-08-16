@@ -9,9 +9,9 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     id: 'manufacture-in-house',
     category: 'general',
-    question: 'Does RelayPrint manufacture products itself?',
+    question: 'Does PrintExchange manufacture products itself?',
     answer:
-      'No. RelayPrint does not operate physical printing machinery or in-house manufacturing facilities. Instead, RelayPrint operates as a B2B print reseller and production coordination company that routes print jobs to suitable manufacturing partners based on job requirements and available partner capability.'
+      'No. PrintExchange does not operate physical printing machinery or in-house manufacturing facilities. Instead, PrintExchange operates as a B2B print reseller and production coordination company that routes print jobs to suitable manufacturing partners based on job requirements and available partner capability.'
   },
   {
     id: 'place-order-online',
@@ -23,21 +23,21 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     id: 'how-routing-works',
     category: 'general',
-    question: 'How does RelayPrint select a manufacturing partner for a job?',
+    question: 'How does PrintExchange select a manufacturing partner for a job?',
     answer:
       'Routing is determined by matching specific job requirements—such as sheet size, stock weight, binding, finishing, run volume, required delivery date, and geographic destination—against the capabilities and available capacity of our manufacturing partners.'
   },
   {
     id: 'platform-integration',
     category: 'partners',
-    question: 'Does RelayPrint work with print platforms and brokers?',
+    question: 'Does PrintExchange work with print platforms and brokers?',
     answer:
       'Yes. Working with print platforms, web-to-print software providers, brokers, and commercial buyers is a central part of our business model. We provide a single point of coordination to access diverse manufacturing routes.'
   },
   {
     id: 'manufacturer-participation',
     category: 'manufacturers',
-    question: 'Can print manufacturers work with RelayPrint?',
+    question: 'Can print manufacturers work with PrintExchange?',
     answer:
       'Yes. We are interested in building professional relationships with reliable commercial print and finishing businesses. Inclusion in our partner network is subject to commercial discussions, technical capability review, and agreed operational standards.'
   },
@@ -46,13 +46,13 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: 'manufacturers',
     question: 'Are manufacturing partners guaranteed specific job volumes?',
     answer:
-      'No. RelayPrint does not provide volume or revenue guarantees. Production work is routed based on actual commercial demand, job specification matching, partner capacity, and agreed pricing arrangements.'
+      'No. PrintExchange does not provide volume or revenue guarantees. Production work is routed based on actual commercial demand, job specification matching, partner capacity, and agreed pricing arrangements.'
   },
   {
     id: 'single-factory-comparison',
     category: 'general',
-    question: 'How does RelayPrint’s model compare to working directly with a single printer?',
+    question: 'How does PrintExchange’s model compare to working directly with a single printer?',
     answer:
-      'Individual print facilities excel in specific equipment setups, formats, or finishing specialisms. RelayPrint acts as a coordination layer that directs different types of work to appropriate production resources where suitable, rather than forcing all specifications onto a single factory setup.'
+      'Individual print facilities excel in specific equipment setups, formats, or finishing specialisms. PrintExchange acts as a coordination layer that directs different types of work to appropriate production resources where suitable, rather than forcing all specifications onto a single factory setup.'
   }
 ];

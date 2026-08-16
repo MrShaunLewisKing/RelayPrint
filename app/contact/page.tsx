@@ -5,9 +5,9 @@ import { GeneralContactForm } from '@/components/forms/GeneralContactForm';
 import { Callout } from '@/components/ui/Callout';
 
 export const metadata: Metadata = {
-  title: 'Contact RelayPrint | B2B Enquiries & Partnerships',
+  title: 'Contact PrintExchange | B2B Enquiries & Partnerships',
   description:
-    'Contact the RelayPrint team to discuss commercial print routing, platform integrations, or becoming a print manufacturing partner.'
+    'Contact the PrintExchange team to discuss commercial print routing, platform integrations, or becoming a print manufacturing partner.'
 };
 
 export default function ContactPage() {
@@ -22,7 +22,7 @@ export default function ContactPage() {
                 Get In Touch
               </span>
               <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-foreground">
-                Contact RelayPrint.
+                Contact PrintExchange.
               </h1>
               <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
                 Speak with our team regarding B2B print routing, software integrations, or joining our manufacturing partner network.
@@ -53,7 +53,7 @@ export default function ContactPage() {
             </div>
 
             <Callout variant="neutral">
-              RelayPrint coordinates production for commercial partners. We do not accept consumer orders on this website.
+              PrintExchange coordinates production for commercial partners. We do not accept consumer orders on this website.
             </Callout>
           </div>
 

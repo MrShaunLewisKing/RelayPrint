@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import { Container } from '@/components/layout/Container';
-import { Button } from '@/components/ui/Button';
 import { Callout } from '@/components/ui/Callout';
 import { ManufacturerPartnerForm } from '@/components/forms/ManufacturerPartnerForm';
 import { PlatformPartnerForm } from '@/components/forms/PlatformPartnerForm';
@@ -21,7 +20,7 @@ export default function PartnerNetworkPage() {
             Partnerships
           </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-foreground">
-            Work with RelayPrint.
+            Work with PrintExchange.
           </h1>
           <p className="text-lg text-slate-600 leading-relaxed">
             We build relationships with print platforms, commercial brokers, and independent UK print manufacturers.
@@ -29,7 +28,7 @@ export default function PartnerNetworkPage() {
         </div>
 
         <Callout variant="neutral">
-          RelayPrint operates a distributed routing and coordination network. Partner onboarding is subject to capability review and commercial agreement.
+          PrintExchange operates a distributed routing and coordination network. Partner onboarding is subject to capability review and commercial agreement.
         </Callout>
 
         {/* Pathway Switcher */}

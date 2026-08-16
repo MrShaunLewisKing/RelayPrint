@@ -4,7 +4,7 @@ import Link from 'next/link';
 // Preline UI Free Block: Tight Announcement / CTA Card
 // Category: Marketing → Announcement Banners
 // Source: https://preline.co/blocks/marketing/announcement-banners/#blurred-background-cta-banner
-// Adapted for RelayPrint: 3rd and Final Filled Button ("Contact RelayPrint"), concise non-repetitive copy
+// Brand: PrintExchange
 
 export function HomeCTA() {
   return (
@@ -27,7 +27,7 @@ export function HomeCTA() {
             Let&apos;s talk print.
           </h2>
           <p className="mt-3 text-base sm:text-lg text-slate-300 leading-relaxed">
-            Have something to discuss with RelayPrint?
+            Have something to discuss with PrintExchange?
           </p>
           <div className="mt-8 flex justify-center">
             {/* 3rd and Final Filled Button on the Homepage */}
@@ -35,7 +35,7 @@ export function HomeCTA() {
               href="/contact"
               className="h-11 px-7 inline-flex items-center justify-center gap-x-1.5 text-sm font-semibold rounded-full bg-white text-[#101426] hover:bg-gray-100 hover:-translate-y-[1px] focus:outline-hidden transition-all duration-200 shadow-md group"
             >
-              <span>Contact RelayPrint</span>
+              <span>Contact PrintExchange</span>
               <svg
                 className="shrink-0 size-3.5 transition-transform duration-200 group-hover:translate-x-0.5"
                 xmlns="http://www.w3.org/2000/svg"

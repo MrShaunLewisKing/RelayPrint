@@ -7,9 +7,9 @@ import { Callout } from '@/components/ui/Callout';
 import { ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Print Capabilities | RelayPrint Network',
+  title: 'Print Capabilities | PrintExchange Network',
   description:
-    'Explore the commercial print formats, document types, and finishing options supported across RelayPrint’s manufacturing network.'
+    'Explore the commercial print formats, document types, and finishing options supported across PrintExchange’s manufacturing network.'
 };
 
 export default function CapabilitiesPage() {

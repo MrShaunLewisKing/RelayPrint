@@ -8,7 +8,7 @@ import { PrintRegistrationMarks } from '@/components/ui/PrintRegistrationMarks';
 
 export const metadata: Metadata = {
   title: 'Draft Privacy Policy | Legal Review',
-  description: 'Draft Privacy Policy for RelayPrint, subject to formal legal confirmation and review.'
+  description: 'Draft Privacy Policy for PrintExchange, subject to formal legal confirmation and review.'
 };
 
 export default function PrivacyPage() {
@@ -41,14 +41,14 @@ export default function PrivacyPage() {
             <section className="space-y-3">
               <h2 className="text-lg font-bold text-foreground">1. Introduction & Data Controller</h2>
               <p>
-                This Privacy Policy explains how <strong>[Company Legal Entity Name]</strong> (trading as <strong>RelayPrint</strong>, referred to as &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) collects, processes, and protects personal data when individuals or business representatives visit our website or communicate with our operations team.
+                This Privacy Policy explains how <strong>[Company Legal Entity Name]</strong> (trading as <strong>PrintExchange</strong>, referred to as &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) collects, processes, and protects personal data when individuals or business representatives visit our website or communicate with our operations team.
               </p>
               <p>
                 <strong>Data Controller Information:</strong><br />
                 Entity Name: <code>[Company Legal Entity Name]</code><br />
                 Company Registration Number: <code>[Company Registration Number]</code><br />
                 Registered Office Address: <code>[Registered Address, United Kingdom]</code><br />
-                Privacy Contact Email: <code>[privacy@relayprint.co.uk]</code>
+                Privacy Contact Email: <code>[privacy@printexchange.co.uk]</code>
               </p>
             </section>
 
@@ -93,7 +93,7 @@ export default function PrivacyPage() {
             <section className="space-y-3">
               <h2 className="text-lg font-bold text-foreground">6. Your Data Rights</h2>
               <p>
-                Under UK data protection law, individuals have rights including access to their data, rectification of inaccurate information, erasure, and restriction of processing. Enquiries regarding data rights should be directed to <code>[privacy@relayprint.co.uk]</code>.
+                Under UK data protection law, individuals have rights including access to their data, rectification of inaccurate information, erasure, and restriction of processing. Enquiries regarding data rights should be directed to <code>[privacy@printexchange.co.uk]</code>.
               </p>
             </section>
 

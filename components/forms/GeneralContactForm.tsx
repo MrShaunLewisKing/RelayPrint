@@ -94,7 +94,7 @@ export function GeneralContactForm() {
       {/* Notice regarding B2B direct routing */}
       <div className="mb-6">
         <Callout variant="neutral" title="Direct Ordering Policy">
-          RelayPrint is a B2B print-routing and production coordination company. This website does not accept direct consumer print orders or immediate artwork uploads.
+          PrintExchange is a B2B print-routing and production coordination company. This website does not accept direct consumer print orders or immediate artwork uploads.
         </Callout>
       </div>
 

@@ -2,15 +2,14 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Container } from '@/components/layout/Container';
-import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Button } from '@/components/ui/Button';
 import { Callout } from '@/components/ui/Callout';
-import { ArrowRight, Check } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'How It Works | Production Workflow & Routing',
   description:
-    'Explore RelayPrint’s 5-stage production coordination process, connecting print requirements with suitable manufacturing partners.'
+    'Explore PrintExchange’s 5-stage production coordination process, connecting print requirements with suitable manufacturing partners.'
 };
 
 export default function HowItWorksPage() {
@@ -38,7 +37,7 @@ export default function HowItWorksPage() {
     {
       num: '05',
       title: 'Production coordinated',
-      desc: 'RelayPrint oversees schedule progression, milestones, and delivery tracking between all parties.'
+      desc: 'PrintExchange oversees schedule progression, milestones, and delivery tracking between all parties.'
     }
   ];
 
@@ -73,12 +72,12 @@ export default function HowItWorksPage() {
             From requirement to production.
           </h1>
           <p className="text-lg text-slate-600 leading-relaxed">
-            RelayPrint coordinates print work between commercial demand sources and independent UK manufacturing partners.
+            PrintExchange coordinates print work between commercial demand sources and independent UK manufacturing partners.
           </p>
         </div>
 
         <Callout variant="neutral">
-          RelayPrint coordinates production with independent manufacturing partners. We do not operate physical printing machinery or take consumer orders on this website.
+          PrintExchange coordinates production with independent manufacturing partners. We do not operate physical printing machinery or take consumer orders on this website.
         </Callout>
 
         {/* 5-Step Visual Sequence */}
@@ -136,7 +135,7 @@ export default function HowItWorksPage() {
           </div>
           <Link href="/contact">
             <Button variant="primary" size="lg" rightIcon={<ArrowRight className="w-4 h-4" />}>
-              Contact RelayPrint
+              Contact PrintExchange
             </Button>
           </Link>
         </div>

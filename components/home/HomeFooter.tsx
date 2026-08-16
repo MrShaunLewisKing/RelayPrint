@@ -5,17 +5,17 @@ import { PrintRegistrationMarks } from '@/components/ui/PrintRegistrationMarks';
 // Preline UI Free Block: Five-Column Footer with Language Dropdown Free (Foundation)
 // Category: Marketing → Website Footers
 // Source: https://preline.co/blocks/marketing/website-footers/#five-column-footer-with-language-dropdown
-// Adapted for RelayPrint exact specification (Dark #050815 with ghosted wordmark)
+// Brand: PrintExchange (Dark #050815 with ghosted wordmark)
 
 export function HomeFooter() {
   return (
     <footer className="mt-auto bg-[#050815] text-white border-t border-gray-900 relative overflow-hidden">
-      {/* Decorative Oversized Ghosted RELAYPRINT Wordmark */}
+      {/* Decorative Oversized Ghosted PRINTEXCHANGE Wordmark */}
       <div
-        className="absolute -bottom-8 right-0 font-black text-gray-900/35 text-7xl sm:text-9xl lg:text-[13rem] tracking-tighter select-none pointer-events-none leading-none z-0"
+        className="absolute -bottom-8 right-0 font-black text-gray-900/35 text-6xl sm:text-8xl lg:text-[11rem] tracking-tighter select-none pointer-events-none leading-none z-0"
         aria-hidden="true"
       >
-        RELAYPRINT
+        PRINTEXCHANGE
       </div>
 
       <div className="relative z-10 max-w-[1120px] py-14 px-4 sm:px-6 lg:px-8 lg:pt-18 mx-auto">
@@ -27,10 +27,10 @@ export function HomeFooter() {
             <Link
               href="/"
               className="inline-flex items-center gap-1.5 text-[15px] font-black text-white focus:outline-hidden focus:opacity-80"
-              aria-label="RelayPrint"
+              aria-label="PrintExchange"
             >
               <span>
-                Relay<span className="text-[#5747E8]">Print</span>
+                Print<span className="text-[#5747E8]">Exchange</span>
               </span>
               <PrintRegistrationMarks />
             </Link>
@@ -114,11 +114,11 @@ export function HomeFooter() {
         {/* Bottom Sub-Row */}
         <div className="pt-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-xs text-gray-500">
           <p>
-            RelayPrint coordinates commercial print routing and production with
+            PrintExchange coordinates commercial print routing and production with
             independent manufacturing partners.
           </p>
           <p className="shrink-0">
-            © {new Date().getFullYear()} RelayPrint. All rights reserved.
+            © {new Date().getFullYear()} PrintExchange. All rights reserved.
           </p>
         </div>
       </div>

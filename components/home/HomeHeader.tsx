@@ -4,7 +4,7 @@
 // Category: Marketing → Floating Headers
 // Source: https://preline.co/blocks/marketing/website-headers/#left-aligned-website-header-with-dropdown-nav
 // Component Primitives: https://preline.co/docs/components/buttons.html, https://preline.co/docs/components/collapse.html
-// Adapted for RelayPrint: Exact Preline "Book a call" padding and text alignment
+// Brand: PrintExchange
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -51,10 +51,10 @@ export function HomeHeader() {
         <Link
           href="/"
           className="flex items-center gap-1.5 shrink-0 focus:outline-hidden focus:opacity-80 py-1"
-          aria-label="RelayPrint Home"
+          aria-label="PrintExchange Home"
         >
           <span className="text-[15px] font-black tracking-tight text-[#101426] leading-none">
-            Relay<span className="text-[#5747E8]">Print</span>
+            Print<span className="text-[#5747E8]">Exchange</span>
           </span>
           <PrintRegistrationMarks />
         </Link>

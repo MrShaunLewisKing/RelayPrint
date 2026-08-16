@@ -4,7 +4,7 @@
 // Category: Marketing → Feature Sections
 // Source: https://preline.co/blocks/marketing/feature-sections/#feature-steps-section
 // Component Primitives: https://preline.co/docs/components/timeline.html
-// Adapted for RelayPrint: 35% / 65% split, ROUTE highlighted as visual focal point, no filled button
+// Brand: PrintExchange
 
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
@@ -38,7 +38,7 @@ export function HomeProcess() {
     <section
       ref={sectionRef}
       className="bg-[#080D1D] text-white py-20 lg:py-28 border-t border-gray-900 relative overflow-hidden"
-      aria-label="How RelayPrint Works"
+      aria-label="How PrintExchange Works"
     >
       <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
@@ -53,7 +53,7 @@ export function HomeProcess() {
               <span className="block text-slate-200">Four stages.</span>
             </h2>
             <p className="mt-4 text-base text-slate-300 leading-relaxed max-w-sm">
-              RelayPrint reviews the requirement and coordinates its route into
+              PrintExchange reviews the requirement and coordinates its route into
               suitable production.
             </p>
           </div>
@@ -183,7 +183,7 @@ export function HomeProcess() {
                   Coordinate
                 </h3>
                 <p className="mt-2 text-base text-slate-300 leading-relaxed max-w-lg">
-                  RelayPrint oversees milestones and ensures direct routing continuity through delivery.
+                  PrintExchange oversees milestones and ensures direct routing continuity through delivery.
                 </p>
               </div>
             </div>

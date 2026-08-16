@@ -30,25 +30,26 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.relayprint.co.uk'),
+  metadataBase: new URL('https://www.printexchange.co.uk'),
   title: {
-    default: 'RelayPrint | B2B Commercial Print Routing & Production Coordination',
-    template: '%s | RelayPrint'
+    default: 'PrintExchange | B2B Commercial Print Routing & Production Coordination',
+    template: '%s | PrintExchange'
   },
   description:
-    'RelayPrint is an independent UK B2B commercial print routing and production coordination company connecting platform and commercial demand with verified manufacturing partners.',
+    'PrintExchange is an independent UK B2B commercial print routing and production coordination company connecting platform and commercial demand with verified manufacturing partners.',
   keywords: [
     'commercial print routing',
     'B2B print coordination',
     'distributed print manufacturing',
+    'print exchange UK',
     'print reseller UK',
     'print production partners',
     'platform print fulfillment',
     'trade print network'
   ],
-  authors: [{ name: 'RelayPrint Operations', url: 'https://www.relayprint.co.uk' }],
-  creator: 'RelayPrint',
-  publisher: 'RelayPrint',
+  authors: [{ name: 'PrintExchange Operations', url: 'https://www.printexchange.co.uk' }],
+  creator: 'PrintExchange',
+  publisher: 'PrintExchange',
   formatDetection: {
     email: false,
     address: false,
@@ -60,9 +61,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://www.relayprint.co.uk',
-    siteName: 'RelayPrint',
-    title: 'RelayPrint | B2B Commercial Print Routing & Production Coordination',
+    url: 'https://www.printexchange.co.uk',
+    siteName: 'PrintExchange',
+    title: 'PrintExchange | B2B Commercial Print Routing & Production Coordination',
     description:
       'Connecting commercial print requirements with suitable manufacturing partners and coordinating the route from requirement to production.',
     images: [
@@ -70,13 +71,13 @@ export const metadata: Metadata = {
         url: '/illustrations/hero-print.svg',
         width: 1200,
         height: 630,
-        alt: 'RelayPrint Commercial Print Routing'
+        alt: 'PrintExchange Commercial Print Routing'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'RelayPrint | B2B Commercial Print Routing & Production Coordination',
+    title: 'PrintExchange | B2B Commercial Print Routing & Production Coordination',
     description:
       'Connecting commercial print requirements with suitable manufacturing partners and coordinating the route from requirement to production.',
     images: ['/illustrations/hero-print.svg']
@@ -102,9 +103,9 @@ export default function RootLayout({
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'RelayPrint',
-    url: 'https://www.relayprint.co.uk',
-    logo: 'https://www.relayprint.co.uk/favicon.ico',
+    name: 'PrintExchange',
+    url: 'https://www.printexchange.co.uk',
+    logo: 'https://www.printexchange.co.uk/favicon.ico',
     description:
       'Independent B2B commercial print routing and production coordination company connecting print demand with verified manufacturing partners across the United Kingdom.',
     knowsAbout: [
@@ -115,7 +116,7 @@ export default function RootLayout({
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Customer Operations',
-      url: 'https://www.relayprint.co.uk/contact'
+      url: 'https://www.printexchange.co.uk/contact'
     }
   };
 

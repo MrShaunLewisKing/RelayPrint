@@ -5,7 +5,7 @@ import Link from 'next/link';
 // Category: Marketing → Hero Sections
 // Source: https://preline.co/blocks/marketing/hero-sections/#hero-with-polygon-background-accent
 // Component Primitives: https://preline.co/docs/components/buttons.html
-// Adapted for RelayPrint: 1 Primary filled CTA ("How RelayPrint works") + 1 secondary text link ("View capabilities →")
+// Brand: PrintExchange
 
 export function HomeHero() {
   return (
@@ -27,9 +27,9 @@ export function HomeHero() {
           </span>
         </h1>
 
-        {/* Hero Copy (Natural, non-repetitive) */}
+        {/* Hero Copy */}
         <p className="mt-6 max-w-[620px] mx-auto text-[17px] text-gray-600 leading-[1.55]">
-          RelayPrint connects commercial print requirements with suitable
+          PrintExchange connects commercial print requirements with suitable
           manufacturing partners and coordinates the route from requirement to
           production.
         </p>
@@ -40,7 +40,7 @@ export function HomeHero() {
             href="/how-it-works"
             className="h-11 px-6 inline-flex items-center justify-center gap-x-1.5 text-sm font-semibold rounded-full bg-[#5747E8] text-white hover:bg-[#4338ca] hover:-translate-y-[1px] hover:shadow-sm focus:outline-hidden transition-all duration-200 group shadow-2xs"
           >
-            <span>How RelayPrint works</span>
+            <span>How PrintExchange works</span>
             <svg
               className="shrink-0 size-3.5 transition-transform duration-200 group-hover:translate-x-0.5"
               xmlns="http://www.w3.org/2000/svg"

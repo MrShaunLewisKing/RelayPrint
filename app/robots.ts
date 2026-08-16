@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/']
     },
-    sitemap: 'https://www.relayprint.co.uk/sitemap.xml'
+    sitemap: 'https://www.printexchange.co.uk/sitemap.xml'
   };
 }
