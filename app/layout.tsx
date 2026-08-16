@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/components/layout/Header';
@@ -8,33 +8,45 @@ import PrelineScriptWrapper from '@/components/PrelineScriptWrapper';
 const geistSans = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
-  display: 'swap'
+  display: 'swap',
+  preload: true
 });
 
 const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
   subsets: ['latin'],
-  display: 'swap'
+  display: 'swap',
+  preload: true
 });
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#080d1d' }
+  ],
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.relayprint.co.uk'),
   title: {
-    default: 'RelayPrint | B2B Print Routing & Production Coordination',
+    default: 'RelayPrint | B2B Commercial Print Routing & Production Coordination',
     template: '%s | RelayPrint'
   },
   description:
-    'RelayPrint is a UK B2B print reseller, print-routing and production coordination company connecting print demand with suitable manufacturing partners.',
+    'RelayPrint is an independent UK B2B commercial print routing and production coordination company connecting platform and commercial demand with verified manufacturing partners.',
   keywords: [
-    'print routing',
+    'commercial print routing',
     'B2B print coordination',
-    'distributed print production',
-    'commercial print reseller',
-    'print manufacturing partners',
-    'print platform fulfilment',
-    'UK print supplier network'
+    'distributed print manufacturing',
+    'print reseller UK',
+    'print production partners',
+    'platform print fulfillment',
+    'trade print network'
   ],
-  authors: [{ name: 'RelayPrint Operations' }],
+  authors: [{ name: 'RelayPrint Operations', url: 'https://www.relayprint.co.uk' }],
   creator: 'RelayPrint',
   publisher: 'RelayPrint',
   formatDetection: {
@@ -42,24 +54,43 @@ export const metadata: Metadata = {
     address: false,
     telephone: false
   },
+  alternates: {
+    canonical: '/'
+  },
   openGraph: {
     type: 'website',
     locale: 'en_GB',
     url: 'https://www.relayprint.co.uk',
     siteName: 'RelayPrint',
-    title: 'RelayPrint | B2B Print Routing & Production Coordination',
+    title: 'RelayPrint | B2B Commercial Print Routing & Production Coordination',
     description:
-      'Connecting print demand from platforms and commercial relationships with suitable manufacturing partners across a distributed network.'
+      'Connecting commercial print requirements with suitable manufacturing partners and coordinating the route from requirement to production.',
+    images: [
+      {
+        url: '/illustrations/hero-print.svg',
+        width: 1200,
+        height: 630,
+        alt: 'RelayPrint Commercial Print Routing'
+      }
+    ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'RelayPrint | B2B Print Routing & Production Coordination',
+    title: 'RelayPrint | B2B Commercial Print Routing & Production Coordination',
     description:
-      'Connecting print demand from platforms and commercial relationships with suitable manufacturing partners across a distributed network.'
+      'Connecting commercial print requirements with suitable manufacturing partners and coordinating the route from requirement to production.',
+    images: ['/illustrations/hero-print.svg']
   },
   robots: {
     index: true,
-    follow: true
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
+    }
   }
 };
 
@@ -73,13 +104,19 @@ export default function RootLayout({
     '@type': 'Organization',
     name: 'RelayPrint',
     url: 'https://www.relayprint.co.uk',
+    logo: 'https://www.relayprint.co.uk/favicon.ico',
     description:
-      'B2B print reseller, print-routing and production coordination company in the United Kingdom.',
+      'Independent B2B commercial print routing and production coordination company connecting print demand with verified manufacturing partners across the United Kingdom.',
     knowsAbout: [
       'Commercial Print Routing',
       'Print Production Coordination',
-      'Distributed Manufacturing'
-    ]
+      'Distributed Print Manufacturing'
+    ],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'Customer Operations',
+      url: 'https://www.relayprint.co.uk/contact'
+    }
   };
 
   return (
