@@ -22,15 +22,15 @@ export function HomeCTA() {
         />
 
         {/* Centered Content */}
-        <div className="relative z-10 max-w-xl">
+        <div className="relative z-10 max-w-md">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
             Let&apos;s talk print.
           </h2>
           <p className="mt-3 text-base sm:text-lg text-slate-300 leading-relaxed">
-            Have something to discuss with PrintExchange?
+            Have something to discuss?
           </p>
           <div className="mt-8 flex justify-center">
-            {/* 3rd and Final Filled Button on the Homepage */}
+            {/* 3rd and Final Filled Button on Homepage */}
             <Link
               href="/contact"
               className="h-11 px-7 inline-flex items-center justify-center gap-x-1.5 text-sm font-semibold rounded-full bg-white text-[#101426] hover:bg-gray-100 hover:-translate-y-[1px] focus:outline-hidden transition-all duration-200 shadow-md group"

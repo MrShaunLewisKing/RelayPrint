@@ -2,10 +2,10 @@ import React from 'react';
 import Link from 'next/link';
 import { PrintRegistrationMarks } from '@/components/ui/PrintRegistrationMarks';
 
-// Preline UI Free Block: Five-Column Footer with Language Dropdown Free (Foundation)
+// Preline UI Free Block: Five-Column Footer (Foundation)
 // Category: Marketing → Website Footers
 // Source: https://preline.co/blocks/marketing/website-footers/#five-column-footer-with-language-dropdown
-// Brand: PrintExchange (Dark #050815 with ghosted wordmark)
+// Brand: PrintExchange (Dark #050815 with ghosted PRINTEXCHANGE wordmark)
 
 export function HomeFooter() {
   return (
@@ -35,8 +35,7 @@ export function HomeFooter() {
               <PrintRegistrationMarks />
             </Link>
             <p className="text-sm text-gray-400 leading-relaxed max-w-sm">
-              Connecting commercial print demand with suitable manufacturing
-              capability.
+              Connecting print demand with independent production capability.
             </p>
           </div>
 

@@ -1,6 +1,6 @@
 'use client';
 
-// Preline UI Free Block: Feature Steps Section (Enriched Dark Theme)
+// Preline UI Free Block: Feature Steps Section (Dark Process Architecture)
 // Category: Marketing → Feature Sections
 // Source: https://preline.co/blocks/marketing/feature-sections/#feature-steps-section
 // Component Primitives: https://preline.co/docs/components/timeline.html
@@ -17,14 +17,14 @@ export function HomeProcess() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          // Staggered sequential activation (140ms per step)
-          setTimeout(() => setActiveStage(1), 140);
-          setTimeout(() => setActiveStage(2), 280);
-          setTimeout(() => setActiveStage(3), 420);
-          setTimeout(() => setActiveStage(4), 560);
+          // Staggered sequential activation
+          setTimeout(() => setActiveStage(1), 120);
+          setTimeout(() => setActiveStage(2), 240);
+          setTimeout(() => setActiveStage(3), 360);
+          setTimeout(() => setActiveStage(4), 480);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.15 }
     );
 
     if (sectionRef.current) {
@@ -38,38 +38,38 @@ export function HomeProcess() {
     <section
       ref={sectionRef}
       className="bg-[#080D1D] text-white py-20 lg:py-28 border-t border-gray-900 relative overflow-hidden"
-      aria-label="How PrintExchange Works"
+      aria-label="The Exchange Process"
     >
       <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
-          {/* Left Column (35% / approx 4-5 cols) - Sticky Header */}
-          <div className="lg:col-span-4 lg:sticky lg:top-28">
+          {/* Left Column (approx 38% / 5 cols) - Sticky on Desktop */}
+          <div className="lg:col-span-5 lg:sticky lg:top-28">
             <span className="text-xs tracking-widest font-semibold uppercase text-violet-400 block mb-3">
-              How it works
+              THE EXCHANGE PROCESS
             </span>
             <h2 className="text-4xl sm:text-5xl font-black text-white tracking-tight leading-[1.08]">
-              One requirement.
-              <span className="block text-slate-200">Four stages.</span>
+              From requirement
+              <span className="block text-slate-200">to production.</span>
             </h2>
             <p className="mt-4 text-base text-slate-300 leading-relaxed max-w-sm">
-              PrintExchange reviews the requirement and coordinates its route into
-              suitable production.
+              A job enters PrintExchange, its requirements are assessed and an
+              appropriate production route is coordinated.
             </p>
           </div>
           {/* End Left Column */}
 
-          {/* Right Column (65% / approx 8 cols) - Differentiated Vertical Step Sequence */}
-          <div className="lg:col-span-8 lg:ps-4 space-y-0">
+          {/* Right Column (approx 62% / 7 cols) - 4 Vertical Steps with Presence */}
+          <div className="lg:col-span-7 space-y-0">
             
             {/* Step 01: Receive */}
-            <div className="flex gap-x-5">
-              <div className="relative after:absolute after:top-10 after:bottom-0 after:start-4 after:-translate-x-[0.5px] after:border-s-2 after:border-gray-800">
-                <div className="relative z-10 size-8 flex justify-center items-center">
+            <div className="flex gap-x-6">
+              <div className="relative after:absolute after:top-12 after:bottom-0 after:start-5 after:-translate-x-[0.5px] after:border-s-2 after:border-gray-800">
+                <div className="relative z-10 size-10 flex justify-center items-center">
                   <span
-                    className={`flex shrink-0 justify-center items-center size-8 border-2 font-bold text-xs rounded-full transition-all duration-300 ${
+                    className={`flex shrink-0 justify-center items-center size-10 border-2 font-mono font-bold text-sm rounded-full transition-all duration-300 ${
                       activeStage >= 1
-                        ? 'border-violet-400/80 bg-[#141B33] text-violet-300 scale-105'
+                        ? 'border-violet-400 bg-[#141B33] text-violet-300'
                         : 'border-gray-800 bg-[#0F172A] text-gray-500'
                     }`}
                   >
@@ -77,28 +77,28 @@ export function HomeProcess() {
                   </span>
                 </div>
               </div>
-              <div className="grow pt-0.5 pb-10">
+              <div className="grow pt-1.5 pb-12">
                 <h3
-                  className={`text-xl font-bold transition-colors duration-300 ${
+                  className={`text-2xl font-bold transition-colors duration-300 ${
                     activeStage >= 1 ? 'text-white' : 'text-gray-400'
                   }`}
                 >
                   Receive
                 </h3>
                 <p className="mt-2 text-base text-slate-300 leading-relaxed max-w-lg">
-                  Print requirements enter through platforms and commercial relationships.
+                  Commercial print requirements enter through platform and business channels.
                 </p>
               </div>
             </div>
 
-            {/* Step 02: Assess (Brighter route marker) */}
-            <div className="flex gap-x-5">
-              <div className="relative after:absolute after:top-10 after:bottom-0 after:start-4 after:-translate-x-[0.5px] after:border-s-2 after:border-gray-800">
-                <div className="relative z-10 size-8 flex justify-center items-center">
+            {/* Step 02: Assess */}
+            <div className="flex gap-x-6">
+              <div className="relative after:absolute after:top-12 after:bottom-0 after:start-5 after:-translate-x-[0.5px] after:border-s-2 after:border-gray-800">
+                <div className="relative z-10 size-10 flex justify-center items-center">
                   <span
-                    className={`flex shrink-0 justify-center items-center size-8 border-2 font-bold text-xs rounded-full transition-all duration-300 ${
+                    className={`flex shrink-0 justify-center items-center size-10 border-2 font-mono font-bold text-sm rounded-full transition-all duration-300 ${
                       activeStage >= 2
-                        ? 'border-[#5747E8] bg-[#5747E8] text-white shadow-xs shadow-indigo-500/40 scale-105'
+                        ? 'border-indigo-400 bg-[#141B33] text-indigo-300'
                         : 'border-gray-800 bg-[#0F172A] text-gray-500'
                     }`}
                   >
@@ -106,28 +106,28 @@ export function HomeProcess() {
                   </span>
                 </div>
               </div>
-              <div className="grow pt-0.5 pb-10">
+              <div className="grow pt-1.5 pb-12">
                 <h3
-                  className={`text-xl font-bold transition-colors duration-300 ${
+                  className={`text-2xl font-bold transition-colors duration-300 ${
                     activeStage >= 2 ? 'text-white' : 'text-gray-400'
                   }`}
                 >
                   Assess
                 </h3>
                 <p className="mt-2 text-base text-slate-300 leading-relaxed max-w-lg">
-                  Production specifications, timelines and volumes are analyzed.
+                  Format, quantity, finishing and production needs are reviewed.
                 </p>
               </div>
             </div>
 
-            {/* Step 03: Route (VISUAL FOCAL POINT - Subtle Accent Highlight) */}
-            <div className="flex gap-x-5">
-              <div className="relative after:absolute after:top-10 after:bottom-0 after:start-4 after:-translate-x-[0.5px] after:border-s-2 after:border-gray-800">
-                <div className="relative z-10 size-8 flex justify-center items-center">
+            {/* Step 03: Route (VISUAL FOCAL POINT - Violet & Cyan Treatment) */}
+            <div className="flex gap-x-6">
+              <div className="relative after:absolute after:top-12 after:bottom-0 after:start-5 after:-translate-x-[0.5px] after:border-s-2 after:border-gray-800">
+                <div className="relative z-10 size-10 flex justify-center items-center">
                   <span
-                    className={`flex shrink-0 justify-center items-center size-8 border-2 font-bold text-xs rounded-full transition-all duration-300 ${
+                    className={`flex shrink-0 justify-center items-center size-10 border-2 font-mono font-extrabold text-sm rounded-full transition-all duration-300 ${
                       activeStage >= 3
-                        ? 'border-[#06B6D4] bg-[#06B6D4] text-[#080D1D] shadow-sm shadow-cyan-500/50 scale-110 font-extrabold'
+                        ? 'border-[#06B6D4] bg-[#06B6D4] text-[#080D1D] shadow-md shadow-cyan-500/40 scale-110'
                         : 'border-gray-800 bg-[#0F172A] text-gray-500'
                     }`}
                   >
@@ -135,38 +135,32 @@ export function HomeProcess() {
                   </span>
                 </div>
               </div>
-              <div className="grow pt-0.5 pb-10">
-                {/* Visual Focal Point Surface */}
+              <div className="grow pt-1.5 pb-12">
                 <div
-                  className={`p-4 sm:p-5 rounded-2xl border transition-all duration-400 ${
+                  className={`p-5 sm:p-6 rounded-2xl border transition-all duration-400 ${
                     activeStage >= 3
-                      ? 'bg-linear-to-r from-violet-950/40 via-indigo-950/30 to-cyan-950/40 border-cyan-500/40 shadow-inner'
+                      ? 'bg-linear-to-r from-violet-950/50 via-indigo-950/40 to-cyan-950/50 border-cyan-500/40'
                       : 'bg-transparent border-transparent'
                   }`}
                 >
-                  <div className="flex items-center gap-2">
-                    <h3 className="text-xl font-bold text-cyan-300">
-                      Route
-                    </h3>
-                    <span className="text-[10px] uppercase tracking-wider font-bold px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-200 border border-cyan-500/30">
-                      Core Action
-                    </span>
-                  </div>
+                  <h3 className="text-2xl font-bold text-cyan-300">
+                    Route
+                  </h3>
                   <p className="mt-2 text-base text-slate-200 leading-relaxed">
-                    Work is directed to verified independent manufacturing partners based on equipment capability and capacity.
+                    Suitable external production capability is identified.
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Step 04: Coordinate (Return to clean neutral styling) */}
-            <div className="flex gap-x-5">
+            {/* Step 04: Coordinate */}
+            <div className="flex gap-x-6">
               <div className="relative">
-                <div className="relative z-10 size-8 flex justify-center items-center">
+                <div className="relative z-10 size-10 flex justify-center items-center">
                   <span
-                    className={`flex shrink-0 justify-center items-center size-8 border-2 font-bold text-xs rounded-full transition-all duration-300 ${
+                    className={`flex shrink-0 justify-center items-center size-10 border-2 font-mono font-bold text-sm rounded-full transition-all duration-300 ${
                       activeStage >= 4
-                        ? 'border-slate-400 bg-[#1E293B] text-white scale-105'
+                        ? 'border-slate-400 bg-[#1E293B] text-white'
                         : 'border-gray-800 bg-[#0F172A] text-gray-500'
                     }`}
                   >
@@ -174,22 +168,22 @@ export function HomeProcess() {
                   </span>
                 </div>
               </div>
-              <div className="grow pt-0.5 pb-4">
+              <div className="grow pt-1.5 pb-4">
                 <h3
-                  className={`text-xl font-bold transition-colors duration-300 ${
+                  className={`text-2xl font-bold transition-colors duration-300 ${
                     activeStage >= 4 ? 'text-white' : 'text-gray-400'
                   }`}
                 >
                   Coordinate
                 </h3>
                 <p className="mt-2 text-base text-slate-300 leading-relaxed max-w-lg">
-                  PrintExchange oversees milestones and ensures direct routing continuity through delivery.
+                  The requirement moves into the agreed production workflow.
                 </p>
               </div>
             </div>
 
-            {/* Small text link at the very bottom of the step sequence */}
-            <div className="pt-6 ps-13">
+            {/* Text Link at bottom */}
+            <div className="pt-8 ps-16">
               <Link
                 href="/how-it-works"
                 className="inline-flex items-center gap-1.5 text-sm font-semibold text-violet-400 hover:text-violet-300 focus:outline-hidden transition-colors group"
