@@ -7,27 +7,25 @@
 :root {
   --background: #ffffff;
   --surface: #ffffff;
-  --surface-subtle: #f7f6ff;
+  --surface-subtle: #f8f9fc;
   --foreground: #0b1020;
-  --muted-foreground: #596174;
+  --muted-foreground: #5a6272;
   --subtle-foreground: #8b92a3;
   
   --brand: #5747e8;
-  --brand-hover: #4338ca;
+  --brand-hover: #4c3dd6;
   --brand-blue: #2563eb;
   --brand-cyan: #06b6d4;
-  --brand-magenta: #db2777;
-  --brand-amber: #f59e0b;
   --brand-dark: #070b18;
   --brand-soft: #f7f6ff;
 
-  --border: #e7e8ed;
+  --border: #e7e9f0;
   --border-strong: #d1d4de;
   --border-subtle: #f1f2f6;
 
   --radius-btn: 10px;
-  --radius-sm: 14px;
-  --radius-lg: 20px;
+  --radius-icon: 12px;
+  --radius-card: 20px;
   --radius-cta: 24px;
 }
 
@@ -43,6 +41,8 @@
   --color-border-subtle: var(--border-subtle);
   --color-brand: var(--brand);
   --color-brand-hover: var(--brand-hover);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-cyan: var(--brand-cyan);
   --color-brand-dark: var(--brand-dark);
   --color-brand-soft: var(--brand-soft);
   
@@ -66,7 +66,7 @@ body {
   flex-direction: column;
 }
 
-/* Accessibility Skip Link - strictly invisible unless keyboard focused */
+/* Accessibility Skip Link */
 .skip-link {
   position: absolute;
   top: -9999px;
@@ -91,25 +91,25 @@ body {
   outline-offset: 2px;
 }
 
-/* Standardized Typography Classes */
+/* Unified Typography Scale */
 .hero-h1 {
-  font-size: clamp(3.75rem, 6vw, 5.5rem);
+  font-size: clamp(3.8rem, 6vw, 5.6rem);
   font-weight: 750;
-  line-height: 0.95;
+  line-height: 0.94;
   letter-spacing: -0.045em;
 }
 
 .section-h2 {
-  font-size: clamp(2.4rem, 4vw, 3.5rem);
+  font-size: clamp(2.3rem, 4vw, 3.4rem);
   font-weight: 700;
   line-height: 1.02;
   letter-spacing: -0.035em;
 }
 
 .feature-h3 {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   font-weight: 650;
-  line-height: 1.2;
+  line-height: 1.25;
   letter-spacing: -0.015em;
 }
 
@@ -117,14 +117,14 @@ body {
   font-size: 1.0625rem;
   line-height: 1.65;
   font-weight: 400;
-  color: #596174;
+  color: #5a6272;
 }
 
 .body-normal {
   font-size: 0.9375rem;
   line-height: 1.65;
   font-weight: 400;
-  color: #596174;
+  color: #5a6272;
 }
 
 .supporting-small {
@@ -140,7 +140,7 @@ body {
   text-transform: uppercase;
 }
 
-/* Global Shared Button Style */
+/* Shared Primary Filled Button */
 .btn-primary-filled {
   height: 40px;
   padding-left: 18px;
@@ -154,19 +154,15 @@ body {
   gap: 6px;
   background-color: #5747e8;
   color: #ffffff;
-  transition: all 0.2s ease;
+  transition: all 180ms ease;
 }
 
 .btn-primary-filled:hover {
-  background-color: #4338ca;
+  background-color: #4c3dd6;
   transform: translateY(-1px);
 }
 
-.btn-primary-filled:focus {
-  outline: none;
-}
-
-/* Global Shared Text Link Style */
+/* Shared Secondary Text Link */
 .action-text-link {
   font-size: 13px;
   font-weight: 600;
@@ -174,16 +170,44 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  transition: gap 0.2s ease, color 0.2s ease;
+  transition: gap 180ms ease, color 180ms ease;
   outline: none;
 }
 
 .action-text-link:hover {
   gap: 8px;
-  color: #4338ca;
+  color: #4c3dd6;
 }
 
-/* Restrained Art-Directed Keyframe Animations */
+/* Shared Route Line & Node System */
+.route-line {
+  height: 1px;
+  background-color: #e6e8ef;
+}
+
+.route-node-default {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background-color: #ffffff;
+  border: 1px solid #e7e9f0;
+}
+
+.route-node-primary {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background-color: #5747e8;
+}
+
+.route-node-secondary {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background-color: #06b6d4;
+}
+
+/* Restrained Keyframe Animations */
 @keyframes heroGradientFlow {
   0% {
     background-position: 0% 50%;
@@ -220,17 +244,21 @@ body {
   }
 }
 
-/* Single Signature Exchange Route Pulse Animation (5-7s) */
-@keyframes singleRoutePulse {
+/* Single Signature Hero Route Pulse (6s duration + 1.5s natural pause) */
+@keyframes singleSignaturePulse {
   0% {
     left: 0%;
     opacity: 0;
   }
-  15% {
+  12% {
+    opacity: 1;
+  }
+  75% {
     opacity: 1;
   }
   85% {
-    opacity: 1;
+    left: 100%;
+    opacity: 0;
   }
   100% {
     left: 100%;
@@ -252,8 +280,8 @@ body {
   animation: ctaGradientFlow 12s ease-in-out infinite;
 }
 
-.animate-route-pulse {
-  animation: singleRoutePulse 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+.animate-signature-pulse {
+  animation: singleSignaturePulse 7.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {

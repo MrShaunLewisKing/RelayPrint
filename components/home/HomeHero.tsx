@@ -2,9 +2,8 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { PrintRegistrationMarks } from '@/components/ui/PrintRegistrationMarks';
 
-// Preline UI Free Block: Centered Hero with Signature Exchange Rail
+// Preline UI Free Block: Centered Hero with Signature Route & Node System
 // Category: Marketing → Hero Sections
 // Brand: PrintExchange
 
@@ -20,21 +19,21 @@ export function HomeHero() {
       </div>
 
       <div className="relative z-10 max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-14 sm:pt-32 sm:pb-16 text-center">
-        {/* Main Headline - Exact scale */}
-        <h1 className="block max-w-[860px] mx-auto hero-h1">
+        {/* Main Headline */}
+        <h1 className="block max-w-[880px] mx-auto hero-h1">
           <span className="block text-[#0B1020]">Print demand.</span>
-          <span className="block bg-linear-to-r from-[#5747E8] via-[#7C3AED] to-[#2563EB] bg-clip-text text-transparent animate-hero-gradient">
+          <span className="block bg-linear-to-r from-[#5747E8] via-[#6545F4] to-[#2563EB] bg-clip-text text-transparent animate-hero-gradient">
             Meet production capacity.
           </span>
         </h1>
 
-        {/* Hero Copy - Exact scale */}
+        {/* Hero Copy (Max 2-3 lines desktop) */}
         <p className="mt-4 max-w-[620px] mx-auto body-large">
           PrintExchange connects commercial print requirements with suitable independent
           manufacturing capacity and coordinates the route into production.
         </p>
 
-        {/* Hero Actions: 1 Filled Button + 1 Secondary Text Link */}
+        {/* Hero Actions: 1 Filled Button + 1 Text Link */}
         <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
           <Link
             href="/how-it-works"
@@ -42,7 +41,7 @@ export function HomeHero() {
           >
             <span>How PrintExchange works</span>
             <svg
-              className="size-[13px] transition-transform duration-200 group-hover:translate-x-0.5"
+              className="size-[13px] transition-transform duration-180 group-hover:translate-x-0.5"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -63,7 +62,7 @@ export function HomeHero() {
           >
             <span>View capabilities</span>
             <svg
-              className="size-[13px] transition-transform duration-200 group-hover:translate-x-0.5"
+              className="size-[13px] transition-transform duration-180 group-hover:translate-x-0.5"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -79,104 +78,86 @@ export function HomeHero() {
           </Link>
         </div>
 
-        {/* SIGNATURE EXCHANGE RAIL (THE ONLY ROUTING DIAGRAM ON THE PAGE) */}
-        <div className="mt-14 sm:mt-18 pt-6 max-w-[860px] mx-auto">
-          {/* Desktop & Tablet Continuous Horizontal Route */}
-          <div className="hidden sm:grid grid-cols-3 items-center relative px-2">
+        {/* SIGNATURE EXCHANGE ROUTE & NODE SYSTEM (The Only Broad Exchange Diagram) */}
+        <div className="mt-14 sm:mt-18 pt-6 max-w-[840px] mx-auto">
+          {/* Desktop & Tablet Unified Horizontal Rail */}
+          <div className="hidden sm:block relative px-4">
             
-            {/* Background Continuous Connecting Rail with Single Pulse (5-7s) */}
+            {/* 1px Continuous Route Line with Single Pulse (6s + 1.5s pause) */}
             <div
-              className="absolute top-[20px] left-[15%] right-[15%] h-[2px] bg-gray-100 overflow-hidden z-0"
+              className="absolute top-[30px] left-[16%] right-[16%] h-[1px] bg-[#E6E8EF] overflow-hidden z-0"
               aria-hidden="true"
             >
-              <div className="absolute inset-y-0 w-24 bg-linear-to-r from-transparent via-[#5747E8] to-[#06B6D4] opacity-80 animate-route-pulse" />
+              <div className="absolute inset-y-0 w-28 bg-linear-to-r from-transparent via-[#5747E8] to-[#06B6D4] opacity-80 animate-signature-pulse" />
             </div>
 
-            {/* Left Node: PRINT DEMAND */}
-            <div className="flex flex-col items-center text-center z-10">
-              <div className="w-10 h-10 rounded-[12px] bg-violet-50 border border-violet-200/80 flex items-center justify-center text-[#5747E8] shadow-2xs mb-2">
-                <svg
-                  className="size-5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.75"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                  <polyline points="14 2 14 8 20 8" />
-                  <line x1="16" y1="13" x2="8" y2="13" />
-                  <line x1="16" y1="17" x2="8" y2="17" />
-                </svg>
-              </div>
-              <span className="text-xs font-bold text-[#0B1020] tracking-tight">
-                PRINT DEMAND
-              </span>
-              <span className="text-[13px] text-[#596174] mt-0.5">
-                Commercial requirements.
-              </span>
-            </div>
-
-            {/* Center Node: PRINTEXCHANGE */}
-            <div className="flex flex-col items-center text-center z-10">
-              <div className="h-10 px-3.5 rounded-[12px] bg-white border border-gray-200 shadow-xs flex items-center gap-1.5 mb-2">
-                <span className="text-[13px] font-bold text-[#0B1020] tracking-tight">
-                  Print<span className="text-[#5747E8]">Exchange</span>
+            <div className="grid grid-cols-3 items-center relative z-10">
+              
+              {/* Left Node: PRINT DEMAND */}
+              <div className="flex flex-col items-center text-center">
+                <span className="text-[11px] font-bold text-[#5747E8] tracking-wider uppercase mb-1.5">
+                  Input
                 </span>
-                <PrintRegistrationMarks variant="dots" />
+                <div className="size-6 rounded-full bg-white border border-[#E7E9F0] flex items-center justify-center shadow-2xs mb-2">
+                  <span className="size-2 rounded-full bg-[#5747E8]" />
+                </div>
+                <span className="text-xs font-bold text-[#0B1020] tracking-tight">
+                  PRINT DEMAND
+                </span>
+                <span className="text-[13px] text-[#5A6272] mt-0.5">
+                  Commercial requirements.
+                </span>
               </div>
-              <span className="text-xs font-bold text-[#5747E8] tracking-tight">
-                COORDINATION
-              </span>
-              <span className="text-[13px] text-[#596174] mt-0.5">
-                Review &amp; coordinate.
-              </span>
-            </div>
 
-            {/* Right Node: PRODUCTION */}
-            <div className="flex flex-col items-center text-center z-10">
-              <div className="w-10 h-10 rounded-[12px] bg-cyan-50 border border-cyan-200/80 flex items-center justify-center text-[#06B6D4] shadow-2xs mb-2">
-                <svg
-                  className="size-5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.75"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <rect width="20" height="14" x="2" y="5" rx="2" />
-                  <path d="M2 10h20" />
-                </svg>
+              {/* Centre Node: PRINTEXCHANGE (Prominent Primary Point) */}
+              <div className="flex flex-col items-center text-center">
+                <span className="text-[11px] font-bold text-[#5747E8] tracking-wider uppercase mb-1.5">
+                  Coordination
+                </span>
+                <div className="h-7 px-3 rounded-full bg-white border border-[#5747E8]/30 shadow-xs flex items-center gap-1.5 mb-2">
+                  <span className="size-2.5 rounded-full bg-[#5747E8]" />
+                  <span className="text-[12px] font-bold text-[#0B1020]">
+                    Print<span className="text-[#5747E8]">Exchange</span>
+                  </span>
+                </div>
+                <span className="text-xs font-bold text-[#5747E8] tracking-tight">
+                  ROUTING LAYER
+                </span>
+                <span className="text-[13px] text-[#5A6272] mt-0.5">
+                  Review &amp; coordinate.
+                </span>
               </div>
-              <span className="text-xs font-bold text-[#0B1020] tracking-tight">
-                PRODUCTION
-              </span>
-              <span className="text-[13px] text-[#596174] mt-0.5">
-                Independent manufacturing.
-              </span>
-            </div>
 
+              {/* Right Node: PRODUCTION */}
+              <div className="flex flex-col items-center text-center">
+                <span className="text-[11px] font-bold text-[#06B6D4] tracking-wider uppercase mb-1.5">
+                  Output
+                </span>
+                <div className="size-6 rounded-full bg-white border border-[#E7E9F0] flex items-center justify-center shadow-2xs mb-2">
+                  <span className="size-2 rounded-full bg-[#06B6D4]" />
+                </div>
+                <span className="text-xs font-bold text-[#0B1020] tracking-tight">
+                  PRODUCTION
+                </span>
+                <span className="text-[13px] text-[#5A6272] mt-0.5">
+                  Independent manufacturing.
+                </span>
+              </div>
+
+            </div>
           </div>
 
-          {/* Mobile Condensed Exchange Route (375px) */}
-          <div className="sm:hidden flex flex-col items-center gap-2 p-4 rounded-[14px] bg-gray-50/80 border border-gray-100 text-center">
-            <div className="flex items-center justify-between w-full text-xs font-bold px-2">
-              <span className="text-violet-700">PRINT DEMAND</span>
+          {/* Mobile Condensed Exchange Rail (375px) */}
+          <div className="sm:hidden flex flex-col items-center gap-2.5 p-4 rounded-[14px] bg-[#F8F9FC] border border-[#E7E9F0] text-center">
+            <div className="flex items-center justify-between w-full text-xs font-bold px-1">
+              <span className="text-[#5747E8]">PRINT DEMAND</span>
               <span className="text-gray-300">→</span>
               <span className="text-[#0B1020]">PrintExchange</span>
               <span className="text-gray-300">→</span>
-              <span className="text-cyan-700">PRODUCTION</span>
+              <span className="text-[#06B6D4]">PRODUCTION</span>
             </div>
-            <div className="w-full h-1 bg-linear-to-r from-[#5747E8] via-[#8B5CF6] to-[#06B6D4] rounded-full opacity-70" />
-            <span className="text-xs text-[#596174]">
+            <div className="w-full h-[1px] bg-linear-to-r from-[#5747E8] via-[#6545F4] to-[#06B6D4] opacity-60" />
+            <span className="text-[12px] text-[#5A6272]">
               Connecting requirements directly with manufacturing.
             </span>
           </div>

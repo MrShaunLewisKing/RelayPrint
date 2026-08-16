@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-// Preline UI Free Block: Asymmetric Bento Grid
+// Preline UI Free Block: Asymmetric Bento Grid with Unified Brand Palette
 // Category: Marketing → Bento Grids / Feature Grids
 // Brand: PrintExchange (PRINT CAPABILITIES)
 
@@ -27,22 +27,21 @@ export function HomeCapabilities() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
           
           {/* TOP LEFT: Commercial documents (Span 7) */}
-          <div className="md:col-span-7 relative overflow-hidden rounded-[20px] p-8 sm:p-10 bg-linear-to-br from-violet-50/60 via-white to-violet-50/30 border border-violet-100 hover:border-violet-300 transition-all duration-200 group flex flex-col justify-between min-h-[250px]">
-            {/* Subtle Geometric Print Edge Graphic */}
+          <div className="md:col-span-7 relative overflow-hidden rounded-[20px] p-8 sm:p-10 bg-linear-to-br from-violet-50/40 via-white to-transparent border border-[#E7E9F0] hover:-translate-y-0.5 hover:border-[#5747E8]/30 hover:shadow-[0_12px_30px_rgba(11,16,32,0.06)] transition-all duration-200 group flex flex-col justify-between min-h-[240px]">
+            {/* Standardized L-Shaped Corner Geometry across all tiles */}
             <div
-              className="absolute top-5 right-5 pointer-events-none opacity-25 group-hover:opacity-40 transition-opacity"
+              className="absolute top-4 right-4 pointer-events-none opacity-10 group-hover:opacity-20 transition-opacity"
               aria-hidden="true"
             >
-              <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#5747E8" strokeWidth="1.5">
-                <rect x="8" y="8" width="48" height="48" rx="4" strokeDasharray="3 3" />
-                <path d="M8 20h48M20 8v48" />
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5747E8" strokeWidth="1">
+                <path d="M4 20V4h16" />
               </svg>
             </div>
 
             <div className="relative z-10">
-              <div className="w-10 h-10 rounded-[12px] bg-violet-100/80 text-[#5747E8] flex items-center justify-center mb-6 shadow-2xs">
+              <div className="w-10 h-10 rounded-[12px] bg-violet-50 text-[#5747E8] flex items-center justify-center mb-6 shadow-2xs group-hover:-translate-y-0.5 transition-transform duration-200">
                 <svg
-                  className="size-6"
+                  className="size-5"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -68,9 +67,19 @@ export function HomeCapabilities() {
           </div>
 
           {/* TOP RIGHT: Promotional print (Span 5) */}
-          <div className="md:col-span-5 relative overflow-hidden rounded-[20px] p-8 sm:p-10 bg-linear-to-br from-cyan-50/60 via-white to-cyan-50/30 border border-cyan-100 hover:border-cyan-300 transition-all duration-200 group flex flex-col justify-between min-h-[250px]">
+          <div className="md:col-span-5 relative overflow-hidden rounded-[20px] p-8 sm:p-10 bg-white border border-[#E7E9F0] hover:-translate-y-0.5 hover:border-[#5747E8]/30 hover:shadow-[0_12px_30px_rgba(11,16,32,0.06)] transition-all duration-200 group flex flex-col justify-between min-h-[240px]">
+            {/* Standardized L-Shaped Corner Geometry */}
+            <div
+              className="absolute top-4 right-4 pointer-events-none opacity-10 group-hover:opacity-20 transition-opacity"
+              aria-hidden="true"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5747E8" strokeWidth="1">
+                <path d="M4 20V4h16" />
+              </svg>
+            </div>
+
             <div className="relative z-10">
-              <div className="w-10 h-10 rounded-[12px] bg-cyan-100/80 text-[#06B6D4] flex items-center justify-center mb-6 shadow-2xs">
+              <div className="w-10 h-10 rounded-[12px] bg-violet-50 text-[#5747E8] flex items-center justify-center mb-6 shadow-2xs group-hover:-translate-y-0.5 transition-transform duration-200">
                 <svg
                   className="size-5"
                   xmlns="http://www.w3.org/2000/svg"
@@ -98,9 +107,19 @@ export function HomeCapabilities() {
           </div>
 
           {/* BOTTOM LEFT: Business stationery (Span 5) */}
-          <div className="md:col-span-5 relative overflow-hidden rounded-[20px] p-8 sm:p-10 bg-linear-to-br from-pink-50/60 via-white to-pink-50/30 border border-pink-100 hover:border-pink-300 transition-all duration-200 group flex flex-col justify-between min-h-[250px]">
+          <div className="md:col-span-5 relative overflow-hidden rounded-[20px] p-8 sm:p-10 bg-white border border-[#E7E9F0] hover:-translate-y-0.5 hover:border-[#5747E8]/30 hover:shadow-[0_12px_30px_rgba(11,16,32,0.06)] transition-all duration-200 group flex flex-col justify-between min-h-[240px]">
+            {/* Standardized L-Shaped Corner Geometry */}
+            <div
+              className="absolute top-4 right-4 pointer-events-none opacity-10 group-hover:opacity-20 transition-opacity"
+              aria-hidden="true"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5747E8" strokeWidth="1">
+                <path d="M4 20V4h16" />
+              </svg>
+            </div>
+
             <div className="relative z-10">
-              <div className="w-10 h-10 rounded-[12px] bg-pink-100/80 text-[#DB2777] flex items-center justify-center mb-6 shadow-2xs">
+              <div className="w-10 h-10 rounded-[12px] bg-violet-50 text-[#5747E8] flex items-center justify-center mb-6 shadow-2xs group-hover:-translate-y-0.5 transition-transform duration-200">
                 <svg
                   className="size-5"
                   xmlns="http://www.w3.org/2000/svg"
@@ -127,23 +146,21 @@ export function HomeCapabilities() {
           </div>
 
           {/* BOTTOM RIGHT: Specialist requirements (Span 7) */}
-          <div className="md:col-span-7 relative overflow-hidden rounded-[20px] p-8 sm:p-10 bg-linear-to-br from-amber-50/60 via-white to-amber-50/30 border border-amber-100 hover:border-amber-300 transition-all duration-200 group flex flex-col justify-between min-h-[250px]">
-            {/* Subtle Registration Accent */}
+          <div className="md:col-span-7 relative overflow-hidden rounded-[20px] p-8 sm:p-10 bg-linear-to-br from-violet-50/40 via-white to-transparent border border-[#E7E9F0] hover:-translate-y-0.5 hover:border-[#5747E8]/30 hover:shadow-[0_12px_30px_rgba(11,16,32,0.06)] transition-all duration-200 group flex flex-col justify-between min-h-[240px]">
+            {/* Standardized L-Shaped Corner Geometry */}
             <div
-              className="absolute top-5 right-5 pointer-events-none opacity-25 group-hover:opacity-40 transition-opacity"
+              className="absolute top-4 right-4 pointer-events-none opacity-10 group-hover:opacity-20 transition-opacity"
               aria-hidden="true"
             >
-              <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#F59E0B" strokeWidth="1.5">
-                <circle cx="32" cy="32" r="18" strokeDasharray="3 3" />
-                <line x1="32" y1="6" x2="32" y2="58" />
-                <line x1="6" y1="32" x2="58" y2="32" />
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5747E8" strokeWidth="1">
+                <path d="M4 20V4h16" />
               </svg>
             </div>
 
             <div className="relative z-10">
-              <div className="w-10 h-10 rounded-[12px] bg-amber-100/80 text-[#F59E0B] flex items-center justify-center mb-6 shadow-2xs">
+              <div className="w-10 h-10 rounded-[12px] bg-violet-50 text-[#5747E8] flex items-center justify-center mb-6 shadow-2xs group-hover:-translate-y-0.5 transition-transform duration-200">
                 <svg
-                  className="size-6"
+                  className="size-5"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -178,7 +195,7 @@ export function HomeCapabilities() {
           >
             <span>View all capabilities</span>
             <svg
-              className="size-[13px] transition-transform duration-200 group-hover:translate-x-0.5"
+              className="size-[13px] transition-transform duration-180 group-hover:translate-x-0.5"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
