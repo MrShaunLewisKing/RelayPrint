@@ -3,7 +3,6 @@
 // Preline UI Free Block: Minimal Floating Navbar
 // Category: Marketing → Floating Headers
 // Source: https://preline.co/blocks/marketing/website-headers/#left-aligned-website-header-with-dropdown-nav
-// Component Primitives: https://preline.co/docs/components/buttons.html, https://preline.co/docs/components/collapse.html
 // Brand: PrintExchange
 
 import React, { useState, useEffect } from 'react';
@@ -53,10 +52,10 @@ export function HomeHeader() {
           className="flex items-center gap-1.5 shrink-0 focus:outline-hidden focus:opacity-80 py-1"
           aria-label="PrintExchange Home"
         >
-          <span className="text-[15px] font-black tracking-tight text-[#101426] leading-none">
+          <span className="text-[15px] font-black tracking-tight text-[#0B1020] leading-none">
             Print<span className="text-[#5747E8]">Exchange</span>
           </span>
-          <PrintRegistrationMarks />
+          <PrintRegistrationMarks variant="dots" />
         </Link>
 
         {/* Center: Tight Navigation Links (Desktop) */}
@@ -70,7 +69,7 @@ export function HomeHeader() {
                 className={`py-1.5 px-3 text-[13px] font-medium transition-colors rounded-full focus:outline-hidden ${
                   isActive
                     ? 'text-[#5747E8] font-semibold bg-violet-50/90'
-                    : 'text-gray-600 hover:text-[#5747E8] hover:bg-violet-50/60'
+                    : 'text-[#596174] hover:text-[#5747E8] hover:bg-violet-50/60'
                 }`}
               >
                 {link.label}
@@ -79,11 +78,11 @@ export function HomeHeader() {
           })}
         </div>
 
-        {/* Right: Exact Preline "Book a call" styled button */}
+        {/* Right: Contact Us Button */}
         <div className="flex items-center">
           <Link
             href="/contact"
-            className="hidden md:inline-flex justify-center items-center py-2 px-4 text-sm font-medium rounded-full bg-[#5747E8] text-white hover:bg-[#4338ca] focus:outline-hidden transition-colors shadow-2xs"
+            className="hidden md:inline-flex justify-center items-center h-[38px] px-4 text-[13px] font-semibold rounded-full bg-[#5747E8] text-white hover:bg-[#4338ca] focus:outline-hidden transition-colors shadow-2xs"
           >
             Contact Us
           </Link>
@@ -151,7 +150,7 @@ export function HomeHeader() {
                 className={`py-2 px-3 rounded-lg text-sm font-medium transition-colors ${
                   isActive
                     ? 'text-[#5747E8] font-semibold bg-violet-50'
-                    : 'text-gray-700 hover:bg-gray-100'
+                    : 'text-[#596174] hover:bg-gray-100'
                 }`}
               >
                 {link.label}
@@ -161,7 +160,7 @@ export function HomeHeader() {
           <div className="pt-2 mt-1 border-t border-gray-100">
             <Link
               href="/contact"
-              className="w-full py-2 px-4 flex justify-center items-center text-sm font-medium rounded-full bg-[#5747E8] text-white"
+              className="w-full h-[40px] flex justify-center items-center text-[13px] font-semibold rounded-lg bg-[#5747E8] text-white"
             >
               Contact Us
             </Link>

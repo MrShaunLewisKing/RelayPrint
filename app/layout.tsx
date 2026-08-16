@@ -22,7 +22,7 @@ const geistMono = Geist_Mono({
 export const viewport: Viewport = {
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-    { media: '(prefers-color-scheme: dark)', color: '#080d1d' }
+    { media: '(prefers-color-scheme: dark)', color: '#070b18' }
   ],
   width: 'device-width',
   initialScale: 1,
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     template: '%s | PrintExchange'
   },
   description:
-    'PrintExchange is an independent UK B2B commercial print routing and production coordination company connecting platform and commercial demand with verified manufacturing partners.',
+    'PrintExchange connects commercial print requirements with suitable independent manufacturing capacity and coordinates the route into production.',
   keywords: [
     'commercial print routing',
     'B2B print coordination',
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     siteName: 'PrintExchange',
     title: 'PrintExchange | B2B Commercial Print Routing & Production Coordination',
     description:
-      'Connecting commercial print requirements with suitable manufacturing partners and coordinating the route from requirement to production.',
+      'Connecting commercial print requirements with suitable independent manufacturing capacity and coordinates the route into production.',
     images: [
       {
         url: '/illustrations/hero-print.svg',
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'PrintExchange | B2B Commercial Print Routing & Production Coordination',
     description:
-      'Connecting commercial print requirements with suitable manufacturing partners and coordinating the route from requirement to production.',
+      'Connecting commercial print requirements with suitable independent manufacturing capacity and coordinates the route into production.',
     images: ['/illustrations/hero-print.svg']
   },
   robots: {
@@ -107,7 +107,7 @@ export default function RootLayout({
     url: 'https://www.printexchange.co.uk',
     logo: 'https://www.printexchange.co.uk/favicon.ico',
     description:
-      'Independent B2B commercial print routing and production coordination company connecting print demand with verified manufacturing partners across the United Kingdom.',
+      'Independent B2B commercial print routing and production coordination company connecting print demand with independent manufacturing partners across the United Kingdom.',
     knowsAbout: [
       'Commercial Print Routing',
       'Print Production Coordination',

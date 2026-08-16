@@ -3,13 +3,12 @@ import Link from 'next/link';
 
 // Preline UI Free Block: Tight Announcement / CTA Card
 // Category: Marketing → Announcement Banners
-// Source: https://preline.co/blocks/marketing/announcement-banners/#blurred-background-cta-banner
 // Brand: PrintExchange
 
 export function HomeCTA() {
   return (
-    <section className="px-4 sm:px-6 lg:px-8 py-14 sm:py-20" aria-label="Contact Call to Action">
-      <div className="relative overflow-hidden max-w-[1120px] mx-auto p-10 sm:p-14 rounded-[28px] bg-linear-to-r from-[#080D1D] via-[#181146] to-[#080D1D] text-white text-center shadow-xl border border-indigo-500/20 animate-cta-gradient flex flex-col justify-center items-center">
+    <section className="px-4 sm:px-6 lg:px-8 py-20" aria-label="Contact Call to Action">
+      <div className="relative overflow-hidden max-w-[1120px] mx-auto p-10 sm:p-14 rounded-[24px] bg-linear-to-r from-[#070B18] via-[#150F3B] to-[#070B18] text-white text-center shadow-xl border border-indigo-500/20 animate-cta-gradient flex flex-col justify-center items-center">
         
         {/* Subtle Edge Glow Effect */}
         <div
@@ -23,21 +22,21 @@ export function HomeCTA() {
 
         {/* Centered Content */}
         <div className="relative z-10 max-w-md">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
+          <h2 className="section-h2 text-white">
             Let&apos;s talk print.
           </h2>
-          <p className="mt-3 text-base sm:text-lg text-slate-300 leading-relaxed">
+          <p className="mt-3 body-large text-slate-300">
             Have something to discuss?
           </p>
           <div className="mt-8 flex justify-center">
             {/* 3rd and Final Filled Button on Homepage */}
             <Link
               href="/contact"
-              className="h-11 px-7 inline-flex items-center justify-center gap-x-1.5 text-sm font-semibold rounded-full bg-white text-[#101426] hover:bg-gray-100 hover:-translate-y-[1px] focus:outline-hidden transition-all duration-200 shadow-md group"
+              className="h-[40px] px-[18px] inline-flex items-center justify-center gap-1.5 text-[13px] font-semibold rounded-[10px] bg-white text-[#0B1020] hover:bg-gray-100 hover:-translate-y-[1px] focus:outline-hidden transition-all duration-200 shadow-md group"
             >
               <span>Contact PrintExchange</span>
               <svg
-                className="shrink-0 size-3.5 transition-transform duration-200 group-hover:translate-x-0.5"
+                className="size-[13px] transition-transform duration-200 group-hover:translate-x-0.5"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"

@@ -4,7 +4,6 @@ import { PrintRegistrationMarks } from '@/components/ui/PrintRegistrationMarks';
 
 // Preline UI Free Block: Five-Column Footer (Foundation)
 // Category: Marketing → Website Footers
-// Source: https://preline.co/blocks/marketing/website-footers/#five-column-footer-with-language-dropdown
 // Brand: PrintExchange (Dark #050815 with ghosted PRINTEXCHANGE wordmark)
 
 export function HomeFooter() {
@@ -12,7 +11,7 @@ export function HomeFooter() {
     <footer className="mt-auto bg-[#050815] text-white border-t border-gray-900 relative overflow-hidden">
       {/* Decorative Oversized Ghosted PRINTEXCHANGE Wordmark */}
       <div
-        className="absolute -bottom-8 right-0 font-black text-gray-900/35 text-6xl sm:text-8xl lg:text-[11rem] tracking-tighter select-none pointer-events-none leading-none z-0"
+        className="absolute -bottom-8 right-0 font-black text-gray-900/30 text-6xl sm:text-8xl lg:text-[11rem] tracking-tighter select-none pointer-events-none leading-none z-0"
         aria-hidden="true"
       >
         PRINTEXCHANGE
@@ -26,25 +25,25 @@ export function HomeFooter() {
           <div className="lg:col-span-5 space-y-3">
             <Link
               href="/"
-              className="inline-flex items-center gap-1.5 text-[15px] font-black text-white focus:outline-hidden focus:opacity-80"
+              className="inline-flex items-center gap-1.5 text-[16px] font-bold text-white focus:outline-hidden focus:opacity-80"
               aria-label="PrintExchange"
             >
               <span>
                 Print<span className="text-[#5747E8]">Exchange</span>
               </span>
-              <PrintRegistrationMarks />
+              <PrintRegistrationMarks variant="dots" />
             </Link>
-            <p className="text-sm text-gray-400 leading-relaxed max-w-sm">
+            <p className="text-[13px] text-[#8B92A3] leading-relaxed max-w-sm">
               Connecting print demand with independent production capability.
             </p>
           </div>
 
           {/* Explore Column (2 cols) */}
           <div className="lg:col-span-2 space-y-3">
-            <h4 className="text-xs font-bold text-gray-300 uppercase tracking-wider">
+            <h4 className="text-[11px] font-bold text-gray-300 uppercase tracking-[0.08em]">
               Explore
             </h4>
-            <div className="grid space-y-2 text-sm">
+            <div className="grid space-y-2 text-[13px]">
               <Link
                 className="text-gray-400 hover:text-white transition-colors focus:outline-hidden"
                 href="/how-it-works"
@@ -68,10 +67,10 @@ export function HomeFooter() {
 
           {/* Company Column (2 cols) */}
           <div className="lg:col-span-2 space-y-3">
-            <h4 className="text-xs font-bold text-gray-300 uppercase tracking-wider">
+            <h4 className="text-[11px] font-bold text-gray-300 uppercase tracking-[0.08em]">
               Company
             </h4>
-            <div className="grid space-y-2 text-sm">
+            <div className="grid space-y-2 text-[13px]">
               <Link
                 className="text-gray-400 hover:text-white transition-colors focus:outline-hidden"
                 href="/about"
@@ -89,10 +88,10 @@ export function HomeFooter() {
 
           {/* Legal Column (3 cols) */}
           <div className="lg:col-span-3 space-y-3">
-            <h4 className="text-xs font-bold text-gray-300 uppercase tracking-wider">
+            <h4 className="text-[11px] font-bold text-gray-300 uppercase tracking-[0.08em]">
               Legal
             </h4>
-            <div className="grid space-y-2 text-sm">
+            <div className="grid space-y-2 text-[13px]">
               <Link
                 className="text-gray-400 hover:text-white transition-colors focus:outline-hidden"
                 href="/privacy"
@@ -111,7 +110,7 @@ export function HomeFooter() {
         </div>
 
         {/* Bottom Sub-Row */}
-        <div className="pt-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-xs text-gray-500">
+        <div className="pt-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-[11px] text-gray-500">
           <p>
             PrintExchange coordinates commercial print routing and production with
             independent manufacturing partners.
