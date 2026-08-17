@@ -1,9 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
+import { PrintExchangePattern } from '../shared/PrintExchangePattern';
 
-// Preline UI Free Block: Vertical Feature Steps with Connected Route & Node System
-// Category: Marketing → Feature Sections
-// Brand: PrintExchange (HOW IT WORKS)
+// Preline UI Free Block: Vertical Progress / Timeline
+// Category: Marketing → Process Sections
+// Brand: PrintExchange
 
 export function HomeProcess() {
   return (
@@ -11,6 +12,22 @@ export function HomeProcess() {
       className="bg-[#070B18] text-white py-[64px] sm:py-[88px] relative overflow-hidden animate-section-reveal"
       aria-label="How It Works"
     >
+      {/* Top Transition Border */}
+      <div className="absolute top-0 inset-x-0 h-[1px] bg-linear-to-r from-transparent via-[#7C5CFF]/30 to-transparent opacity-60" aria-hidden="true" />
+
+      {/* Background Pattern & Illumination */}
+      <div className="absolute inset-0 pointer-events-none z-0">
+        <PrintExchangePattern 
+          variant="dark" 
+          className="opacity-100" 
+          style={{ maskImage: 'radial-gradient(ellipse at center, transparent 20%, black 80%)', WebkitMaskImage: 'radial-gradient(ellipse at center, transparent 20%, black 80%)' }}
+        />
+        {/* Subtle violet light behind left heading */}
+        <div className="absolute top-[10%] left-[15%] w-[400px] h-[400px] bg-[#5747E8] opacity-[0.035] blur-[100px] rounded-full" />
+        {/* Subtle cyan light lower-right */}
+        <div className="absolute bottom-[5%] right-[10%] w-[400px] h-[400px] bg-[#06B6D4] opacity-[0.035] blur-[100px] rounded-full" />
+      </div>
+
       <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row lg:gap-[56px] items-start">
           

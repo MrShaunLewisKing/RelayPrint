@@ -1,17 +1,27 @@
 import React from 'react';
 import Link from 'next/link';
+import { PrintExchangePattern } from '../shared/PrintExchangePattern';
 
-// Preline UI Free Block: Editorial Two-Column Audience Surface with Central Node Detail
-// Category: Marketing → Split Feature Surfaces
-// Brand: PrintExchange (WHO IS PRINTEXCHANGE FOR?)
+// Preline UI Free Block: Icon Blocks with split audience approach
+// Category: Marketing → Feature Sections
+// Brand: PrintExchange
 
 export function HomePartners() {
   return (
     <section
-      className="bg-[#F7F6FF] pt-[72px] pb-[48px] sm:pt-[84px] sm:pb-[64px] animate-section-reveal"
+      className="bg-[#F7F6FF] pt-[72px] pb-[48px] sm:pt-[84px] sm:pb-[64px] relative overflow-hidden animate-section-reveal"
       aria-label="Audiences"
     >
-      <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Pattern Integration */}
+      <div className="absolute inset-0 pointer-events-none z-0">
+        <PrintExchangePattern 
+          variant="lavender" 
+          className="opacity-70" 
+          style={{ maskImage: 'radial-gradient(ellipse at center 20%, black 10%, transparent 60%)', WebkitMaskImage: 'radial-gradient(ellipse at center 20%, black 10%, transparent 60%)' }}
+        />
+      </div>
+
+      <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-[32px] sm:mb-[36px]">
@@ -69,7 +79,7 @@ export function HomePartners() {
             {/* DIVIDER & CENTRAL NODE */}
             <div className="hidden md:block absolute top-0 bottom-0 left-1/2 w-[1px] bg-[#E5E7EE] -translate-x-1/2 z-10" aria-hidden="true">
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white flex items-center justify-center p-2 group-hover/surface:opacity-100 transition-opacity">
-                <span className="size-2 rounded-full bg-[#5747E8] shadow-[0_0_8px_rgba(87,71,232,0.4)] transition-all duration-200" />
+                <span className="block size-2 rounded-full bg-[#7C5CFF] shadow-[0_0_12px_rgba(124,92,255,0.6)]" />
               </div>
             </div>
             {/* Mobile Divider */}

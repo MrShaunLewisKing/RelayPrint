@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { PrintExchangePattern } from '../shared/PrintExchangePattern';
 
 // Preline UI Free Block: Five-Column Footer (Clean Text-Only Foundation)
 // Category: Marketing → Website Footers
@@ -8,6 +9,16 @@ import Link from 'next/link';
 export function HomeFooter() {
   return (
     <footer className="mt-auto bg-[#050815] text-white border-t border-[#161B2E] relative overflow-hidden">
+      
+      {/* Pattern Integration */}
+      <div className="absolute inset-0 pointer-events-none z-0">
+        <PrintExchangePattern 
+          variant="footer" 
+          className="opacity-70" 
+          style={{ maskImage: 'linear-gradient(to bottom, black 0%, transparent 70%)', WebkitMaskImage: 'linear-gradient(to bottom, black 0%, transparent 70%)' }}
+        />
+      </div>
+
       {/* Decorative Oversized Ghosted PRINTEXCHANGE Wordmark */}
       <div
         className="absolute -bottom-8 right-0 font-black text-white/[0.035] text-6xl sm:text-8xl lg:text-[11rem] tracking-tighter select-none pointer-events-none leading-none z-0"

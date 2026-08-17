@@ -2,20 +2,27 @@
 
 import React from 'react';
 import Link from 'next/link';
+import { PrintExchangePattern } from '../shared/PrintExchangePattern';
 
-// Preline UI Free Block: Centered Hero with Signature Route & Node System
+// Preline UI Free Block: Hero Graphic Align Center with Route Pulse
 // Category: Marketing → Hero Sections
 // Brand: PrintExchange
 
 export function HomeHero() {
   return (
-    <div className="relative overflow-hidden bg-white">
-      {/* Subtle Polygon Accent Background Layer */}
-      <div
-        aria-hidden="true"
-        className="flex absolute -top-96 start-1/2 transform -translate-x-1/2 -z-0 pointer-events-none"
-      >
-        <div className="bg-linear-to-tl from-[#5747E8]/10 via-[#06B6D4]/5 to-transparent blur-3xl w-[1080px] h-[600px] rounded-full-s-full opacity-60" />
+    <section className="relative overflow-hidden bg-white min-h-[500px]" aria-label="Hero">
+      
+      {/* Pattern & Illumination */}
+      <div className="absolute inset-0 pointer-events-none z-0">
+        <PrintExchangePattern 
+          variant="light" 
+          className="opacity-100" 
+          style={{ maskImage: 'radial-gradient(ellipse at center, transparent 35%, black 85%)', WebkitMaskImage: 'radial-gradient(ellipse at center, transparent 35%, black 85%)' }}
+        />
+        {/* Soft violet light upper-right */}
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#5747E8] opacity-[0.035] blur-[100px] rounded-full translate-x-1/3 -translate-y-1/3" />
+        {/* Very soft blue/cyan light lower-left */}
+        <div className="absolute bottom-1/4 left-0 w-[500px] h-[500px] bg-[#2563EB] opacity-[0.025] blur-[100px] rounded-full -translate-x-1/3 translate-y-1/3" />
       </div>
 
       <div className="relative z-10 max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-[80px] sm:pb-[56px] text-center animate-section-reveal">
@@ -144,6 +151,6 @@ export function HomeHero() {
         </div>
 
       </div>
-    </div>
+    </section>
   );
 }

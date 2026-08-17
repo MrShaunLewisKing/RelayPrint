@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { PrintExchangePattern } from '../shared/PrintExchangePattern';
 
 // Preline UI Free Block: Tight Announcement / CTA Card with Subtle Route Continuity Detail
 // Category: Marketing → Announcement Banners
@@ -7,9 +8,23 @@ import Link from 'next/link';
 
 export function HomeCTA() {
   return (
-    <section className="px-4 sm:px-6 lg:px-8 pt-[48px] pb-[56px] sm:pt-[56px] sm:pb-[64px] bg-white animate-section-reveal" aria-label="Contact Call to Action">
-      <div className="relative overflow-hidden max-w-[980px] mx-auto p-[40px] sm:py-[56px] sm:px-[64px] rounded-[24px] bg-[#070B18] text-white text-center shadow-[0_20px_60px_rgba(11,16,32,0.15)] flex flex-col justify-center items-center">
+    <section className="px-4 sm:px-6 lg:px-8 pt-[48px] pb-[56px] sm:pt-[56px] sm:pb-[64px] bg-white animate-section-reveal relative" aria-label="Contact Call to Action">
+      {/* Optional faint background transition behind the section (white to white) */}
+      
+      <div className="relative overflow-hidden max-w-[980px] mx-auto p-[40px] sm:py-[56px] sm:px-[64px] rounded-[24px] bg-[#070B18] text-white text-center shadow-[0_18px_48px_rgba(11,16,32,0.10)] flex flex-col justify-center items-center">
         
+        {/* Subtle Brand Gradient Top Edge */}
+        <div className="absolute top-0 inset-x-0 h-[1px] bg-linear-to-r from-transparent via-[#7C5CFF]/30 to-[#06B6D4]/30 opacity-80" aria-hidden="true" />
+
+        {/* Pattern & Illumination Integration */}
+        <div className="absolute inset-0 pointer-events-none z-0">
+          <PrintExchangePattern 
+            variant="cta" 
+            className="opacity-70" 
+            style={{ maskImage: 'radial-gradient(ellipse at top left, black 10%, transparent 60%), radial-gradient(ellipse at bottom right, black 10%, transparent 60%)', WebkitMaskImage: 'radial-gradient(ellipse at top left, black 10%, transparent 60%), radial-gradient(ellipse at bottom right, black 10%, transparent 60%)' }}
+          />
+        </div>
+
         {/* Subtle Violet -> Blue Soft Light behind heading */}
         <div
           aria-hidden="true"

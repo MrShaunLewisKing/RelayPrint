@@ -1,14 +1,25 @@
 import React from 'react';
 import Link from 'next/link';
+import { PrintExchangePattern } from '../shared/PrintExchangePattern';
 
-// Preline UI Free Block: Asymmetric Bento Grid with Unified Brand Palette
-// Category: Marketing → Bento Grids / Feature Grids
-// Brand: PrintExchange (PRINT CAPABILITIES)
+// Preline UI Free Block: Asymmetric Bento Grid
+// Category: Marketing → Feature Grids
+// Brand: PrintExchange
 
 export function HomeCapabilities() {
   return (
-    <section className="bg-white pt-[64px] pb-[72px] sm:pt-[72px] sm:pb-[80px] animate-section-reveal" aria-label="Print Capabilities">
-      <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="bg-linear-to-b from-white to-[#FBFAFF] pt-[64px] pb-[72px] sm:pt-[72px] sm:pb-[80px] relative overflow-hidden animate-section-reveal" aria-label="Print Capabilities">
+      
+      {/* Pattern Integration */}
+      <div className="absolute inset-0 pointer-events-none z-0">
+        <PrintExchangePattern 
+          variant="light" 
+          className="opacity-70" 
+          style={{ maskImage: 'radial-gradient(ellipse at center, transparent 40%, black 100%)', WebkitMaskImage: 'radial-gradient(ellipse at center, transparent 40%, black 100%)' }}
+        />
+      </div>
+
+      <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="max-w-2xl pb-[32px]">
@@ -28,14 +39,13 @@ export function HomeCapabilities() {
           
           {/* TOP LEFT: Commercial documents (Span 7) - VIOLET */}
           <div className="md:col-span-7 relative overflow-hidden rounded-[20px] p-[24px] sm:p-[28px] bg-linear-to-br from-[#5747E8]/[0.04] via-white to-transparent border border-[#E7E9F0] hover:-translate-y-[2px] hover:border-[#5747E8]/30 hover:shadow-[0_14px_40px_rgba(11,16,32,0.06)] transition-all duration-200 group flex flex-col justify-between min-h-[200px]">
-            {/* Geometric Detail: Layered sheet lines */}
+            {/* Geometric Detail: Print crop corner */}
             <div
-              className="absolute top-6 right-6 pointer-events-none opacity-20 group-hover:opacity-40 group-hover:-translate-y-1 transition-all duration-200 text-[#5747E8]"
+              className="absolute top-6 right-6 pointer-events-none opacity-[0.12] group-hover:opacity-[0.20] transition-all duration-200 text-[#5747E8]"
               aria-hidden="true"
             >
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <rect x="3" y="3" width="14" height="14" rx="2" />
-                <path d="M7 21h14v-14" />
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1">
+                <path d="M24 0v12 M32 8H20" />
               </svg>
             </div>
 
@@ -71,13 +81,13 @@ export function HomeCapabilities() {
 
           {/* TOP RIGHT: Promotional print (Span 5) - CYAN */}
           <div className="md:col-span-5 relative overflow-hidden rounded-[20px] p-[22px] sm:p-[24px] bg-linear-to-br from-[#06B6D4]/[0.04] via-white to-transparent border border-[#E7E9F0] hover:-translate-y-[2px] hover:border-[#06B6D4]/30 hover:shadow-[0_14px_40px_rgba(11,16,32,0.06)] transition-all duration-200 group flex flex-col justify-between min-h-[180px]">
-            {/* Geometric Detail: Page outline */}
+            {/* Geometric Detail: Print crop corner */}
             <div
-              className="absolute top-5 right-5 pointer-events-none opacity-20 group-hover:opacity-40 group-hover:-translate-y-1 transition-all duration-200 text-[#06B6D4]"
+              className="absolute top-5 right-5 pointer-events-none opacity-[0.12] group-hover:opacity-[0.20] transition-all duration-200 text-[#06B6D4]"
               aria-hidden="true"
             >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <rect x="4" y="4" width="16" height="16" rx="2" strokeDasharray="4 4" />
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                <path d="M16 0v10 M24 6h-10" />
               </svg>
             </div>
 
@@ -113,14 +123,13 @@ export function HomeCapabilities() {
 
           {/* BOTTOM LEFT: Business stationery (Span 5) - MAGENTA */}
           <div className="md:col-span-5 relative overflow-hidden rounded-[20px] p-[22px] sm:p-[24px] bg-linear-to-br from-[#D946EF]/[0.04] via-white to-transparent border border-[#E7E9F0] hover:-translate-y-[2px] hover:border-[#D946EF]/30 hover:shadow-[0_14px_40px_rgba(11,16,32,0.06)] transition-all duration-200 group flex flex-col justify-between min-h-[180px]">
-            {/* Geometric Detail: Registration marks */}
+            {/* Geometric Detail: Print crop corner */}
             <div
-              className="absolute top-5 right-5 pointer-events-none opacity-20 group-hover:opacity-40 group-hover:rotate-45 transition-all duration-300 text-[#D946EF]"
+              className="absolute top-5 right-5 pointer-events-none opacity-[0.12] group-hover:opacity-[0.20] transition-all duration-200 text-[#D946EF]"
               aria-hidden="true"
             >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <circle cx="12" cy="12" r="6" />
-                <path d="M12 2v20M2 12h20" />
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                <path d="M16 0v10 M24 6h-10" />
               </svg>
             </div>
 
@@ -155,14 +164,13 @@ export function HomeCapabilities() {
 
           {/* BOTTOM RIGHT: Specialist requirements (Span 7) - AMBER */}
           <div className="md:col-span-7 relative overflow-hidden rounded-[20px] p-[24px] sm:p-[28px] bg-linear-to-br from-[#F59E0B]/[0.04] via-white to-transparent border border-[#E7E9F0] hover:-translate-y-[2px] hover:border-[#F59E0B]/30 hover:shadow-[0_14px_40px_rgba(11,16,32,0.06)] transition-all duration-200 group flex flex-col justify-between min-h-[200px]">
-            {/* Geometric Detail: Crop corner */}
+            {/* Geometric Detail: Print crop corner */}
             <div
-              className="absolute top-6 right-6 pointer-events-none opacity-20 group-hover:opacity-40 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-200 text-[#F59E0B]"
+              className="absolute top-6 right-6 pointer-events-none opacity-[0.12] group-hover:opacity-[0.20] transition-all duration-200 text-[#F59E0B]"
               aria-hidden="true"
             >
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <path d="M4 20V4h16" />
-                <path d="M14 4H4v10" strokeDasharray="2 2" />
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1">
+                <path d="M24 0v12 M32 8H20" />
               </svg>
             </div>
 
