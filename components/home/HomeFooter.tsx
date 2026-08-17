@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { PrintExchangePattern } from '../shared/PrintExchangePattern';
+import { PrintExchangeBackground } from '../shared/PrintExchangeBackground';
 
 // Preline UI Free Block: Five-Column Footer (Clean Text-Only Foundation)
 // Category: Marketing → Website Footers
@@ -8,14 +8,13 @@ import { PrintExchangePattern } from '../shared/PrintExchangePattern';
 
 export function HomeFooter() {
   return (
-    <footer className="mt-auto bg-[#050815] text-white border-t border-[#161B2E] relative overflow-hidden">
+    <footer className="mt-auto bg-[#050815] text-white relative overflow-hidden pt-[96px] sm:pt-[140px] pb-[32px]">
       
       {/* Pattern Integration */}
       <div className="absolute inset-0 pointer-events-none z-0">
-        <PrintExchangePattern 
+        <PrintExchangeBackground 
           variant="footer" 
-          className="opacity-70" 
-          style={{ maskImage: 'linear-gradient(to bottom, black 0%, transparent 70%)', WebkitMaskImage: 'linear-gradient(to bottom, black 0%, transparent 70%)' }}
+          className="opacity-[0.03]" 
         />
       </div>
 
@@ -27,7 +26,7 @@ export function HomeFooter() {
         PRINTEXCHANGE
       </div>
 
-      <div className="relative z-10 max-w-[1120px] pt-[64px] pb-[50px] lg:pt-[72px] lg:pb-[60px] px-4 sm:px-6 lg:px-8 mx-auto">
+      <div className="relative z-10 max-w-[1120px] px-5 sm:px-6 lg:px-8 mx-auto">
         {/* 4-Area Navigation Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 pb-[40px] border-b border-[#161B2E]">
           
@@ -35,12 +34,10 @@ export function HomeFooter() {
           <div className="lg:col-span-5 space-y-3">
             <Link
               href="/"
-              className="inline-flex items-center text-[16px] font-[750] text-white focus:outline-hidden focus:opacity-80"
+              className="inline-flex items-center text-[16px] font-[750] text-white/50 focus:outline-hidden focus:opacity-80"
               aria-label="PrintExchange"
             >
-              <span>
-                Print<span className="bg-linear-to-r from-[#5747E8] to-[#2563EB] bg-clip-text text-transparent">Exchange</span>
-              </span>
+              PrintExchange
             </Link>
             <p className="text-[13px] text-[#8B92A3] leading-relaxed max-w-sm">
               Connecting print demand with independent production capability.

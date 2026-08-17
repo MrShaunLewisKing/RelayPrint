@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { PrintExchangePattern } from '../shared/PrintExchangePattern';
+import { PrintExchangeBackground } from '../shared/PrintExchangeBackground';
 
 // Preline UI Free Block: Tight Announcement / CTA Card with Subtle Route Continuity Detail
 // Category: Marketing → Announcement Banners
@@ -8,64 +8,38 @@ import { PrintExchangePattern } from '../shared/PrintExchangePattern';
 
 export function HomeCTA() {
   return (
-    <section className="px-4 sm:px-6 lg:px-8 pt-[48px] pb-[56px] sm:pt-[56px] sm:pb-[64px] bg-white animate-section-reveal relative" aria-label="Contact Call to Action">
-      {/* Optional faint background transition behind the section (white to white) */}
-      
-      <div className="relative overflow-hidden max-w-[980px] mx-auto p-[40px] sm:py-[56px] sm:px-[64px] rounded-[24px] bg-[#070B18] text-white text-center shadow-[0_18px_48px_rgba(11,16,32,0.10)] flex flex-col justify-center items-center">
+    <section className="bg-transparent flex justify-center px-4 sm:px-0 pt-[52px]" aria-label="Contact Call to Action">
+      <div className="relative overflow-hidden w-[calc(100%-32px)] sm:w-[980px] h-auto sm:h-[220px] mx-auto p-[48px_24px] sm:p-0 rounded-[24px] bg-[#070B18] text-white text-center shadow-[0_18px_48px_rgba(11,16,32,0.11)] flex flex-col justify-center items-center z-10 -mb-[36px] sm:-mb-[48px]">
         
         {/* Subtle Brand Gradient Top Edge */}
-        <div className="absolute top-0 inset-x-0 h-[1px] bg-linear-to-r from-transparent via-[#7C5CFF]/30 to-[#06B6D4]/30 opacity-80" aria-hidden="true" />
+        <div className="absolute top-0 inset-x-0 h-[1px] bg-linear-to-r from-transparent via-[#5747E8]/30 to-[#06B6D4]/30 opacity-80" aria-hidden="true" />
 
         {/* Pattern & Illumination Integration */}
         <div className="absolute inset-0 pointer-events-none z-0">
-          <PrintExchangePattern 
-            variant="cta" 
-            className="opacity-70" 
-            style={{ maskImage: 'radial-gradient(ellipse at top left, black 10%, transparent 60%), radial-gradient(ellipse at bottom right, black 10%, transparent 60%)', WebkitMaskImage: 'radial-gradient(ellipse at top left, black 10%, transparent 60%), radial-gradient(ellipse at bottom right, black 10%, transparent 60%)' }}
-          />
+          <PrintExchangeBackground variant="cta" className="opacity-[0.025]" />
+          
+          {/* Subtle violet light left-centre */}
+          <div className="absolute top-1/2 left-0 w-[400px] h-[400px] bg-[#5747E8] opacity-[0.04] blur-[80px] rounded-full -translate-y-1/2 -translate-x-1/3" />
+          
+          {/* Subtle blue light right-centre */}
+          <div className="absolute top-1/2 right-0 w-[400px] h-[400px] bg-[#2563EB] opacity-[0.04] blur-[80px] rounded-full -translate-y-1/2 translate-x-1/3" />
         </div>
-
-        {/* Subtle Violet -> Blue Soft Light behind heading */}
-        <div
-          aria-hidden="true"
-          className="absolute top-0 start-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-linear-to-b from-[#5747E8]/15 to-[#2563EB]/5 blur-[60px] pointer-events-none rounded-full"
-        />
-
-        {/* Optional Thin Horizontal Line at low opacity */}
-        <div
-          aria-hidden="true"
-          className="absolute top-1/2 -translate-y-1/2 left-0 right-0 h-[1px] bg-linear-to-r from-transparent via-white/5 to-transparent pointer-events-none"
-        />
 
         {/* Centered Content */}
         <div className="relative z-10 max-w-md w-full">
-          <h2 className="text-[clamp(2.5rem,4vw,3.6rem)] font-bold leading-[1.02] tracking-[-0.035em] text-[#FFFFFF]">
+          <h2 className="text-[42px] font-[700] leading-[1.02] tracking-[-0.035em] text-[#FFFFFF]">
             Let&apos;s talk.
           </h2>
-          <p className="mt-3 text-[1.0625rem] leading-[1.65] text-[#A9B1C1]">
+          <p className="mt-3 text-[15px] leading-[1.6] text-[#AAB2C2]">
             Have something to discuss with PrintExchange?
           </p>
           <div className="mt-6 flex justify-center">
             {/* Final Filled Button */}
             <Link
               href="/contact"
-              className="inline-flex justify-center items-center h-[42px] px-[18px] text-[13px] font-semibold rounded-[12px] bg-white text-[#0B1020] hover:bg-gray-50 focus:outline-hidden transition-colors shadow-sm group"
+              className="inline-flex justify-center items-center h-[42px] px-[18px] text-[13px] font-semibold rounded-[11px] bg-white text-[#0B1020] hover:bg-gray-50 focus:outline-hidden transition-colors shadow-sm"
             >
-              <span>Contact PrintExchange</span>
-              <svg
-                className="size-[13px] ml-1.5 transition-transform duration-200 group-hover:translate-x-0.5"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="m9 18 6-6-6-6" />
-              </svg>
+              Contact PrintExchange
             </Link>
           </div>
         </div>
