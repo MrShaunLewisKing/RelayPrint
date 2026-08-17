@@ -8,48 +8,48 @@ import Link from 'next/link';
 export function HomePartners() {
   return (
     <section
-      className="bg-[#F7F6FF] border-t border-indigo-100/70 py-24"
+      className="bg-[#F7F6FF] py-[96px] sm:py-[112px] animate-section-reveal"
       aria-label="Audiences"
     >
       <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <h2 className="section-h2 text-[#0B1020]">
+        <div className="text-center max-w-2xl mx-auto mb-[64px]">
+          <h2 className="text-[clamp(2.5rem,4vw,3.6rem)] font-bold leading-[1.02] tracking-[-0.035em] text-[#0B1020]">
             Built for both sides
-            <span className="block text-[#5747E8]">of commercial print.</span>
+            <span className="block text-[#0B1020]">of commercial print.</span>
           </h2>
-          <p className="mt-4 body-large">
-            Whether you bring print demand or production capability, PrintExchange provides a commercial point of coordination.
+          <p className="mt-6 text-[1.0625rem] leading-[1.65] text-[#596174]">
+            PrintExchange works with organisations that need print produced and independent businesses able to produce it.
           </p>
         </div>
 
-        {/* ONE UNIFIED PRELINE EDITORIAL SURFACE (Two Columns with 1px Divider & Central Brand Node) */}
-        <div className="bg-white border border-[#E7E9F0] rounded-[20px] shadow-2xs overflow-hidden relative">
-          <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-[#E1E3EC] relative">
+        {/* ONE UNIFIED CONNECTED SURFACE */}
+        <div className="bg-white border border-[#E7E9F0] rounded-[24px] shadow-[0_14px_40px_rgba(11,16,32,0.05)] overflow-hidden relative group/surface">
+          <div className="flex flex-col md:flex-row relative">
             
             {/* LEFT COLUMN: 01 I need print produced */}
-            <div className="p-8 sm:p-10 lg:p-12 flex flex-col justify-between bg-white">
+            <div className="w-full md:w-1/2 p-[40px] sm:p-[64px] flex flex-col justify-between hover:bg-[#5747E8]/[0.02] transition-colors duration-200">
               <div>
-                <span className="text-[11px] font-bold text-[#5747E8] tracking-wider block mb-3">
+                <span className="text-[0.6875rem] font-bold text-[#5747E8] tracking-[0.10em] uppercase block mb-4">
                   01
                 </span>
-                <h3 className="text-[1.5rem] font-bold text-[#0B1020] leading-snug tracking-tight">
+                <h3 className="text-[1.75rem] font-[650] text-[#0B1020] leading-[1.15] tracking-[-0.02em]">
                   I need print produced.
                 </h3>
-                <p className="mt-2.5 body-normal">
+                <p className="mt-3 text-[1.0625rem] leading-[1.65] text-[#596174]">
                   For platforms, brokers and organisations managing commercial print requirements.
                 </p>
               </div>
 
-              <div className="mt-8 pt-2">
+              <div className="mt-10">
                 <Link
                   href="/contact"
-                  className="action-text-link group"
+                  className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#5747E8] hover:text-[#4C3DD6] transition-colors group"
                 >
                   <span>Discuss print requirements</span>
                   <svg
-                    className="size-[13px] transition-transform duration-180 group-hover:translate-x-0.5"
+                    className="size-[13px] transition-transform duration-200 group-hover:translate-x-0.5"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -66,28 +66,37 @@ export function HomePartners() {
               </div>
             </div>
 
+            {/* DIVIDER & CENTRAL NODE */}
+            <div className="hidden md:block absolute top-0 bottom-0 left-1/2 w-[1px] bg-[#E5E7EE] -translate-x-1/2 z-10" aria-hidden="true">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white flex items-center justify-center p-2 group-hover/surface:opacity-100 transition-opacity">
+                <span className="size-2 rounded-full bg-[#5747E8] shadow-[0_0_8px_rgba(87,71,232,0.4)] transition-all duration-200" />
+              </div>
+            </div>
+            {/* Mobile Divider */}
+            <div className="md:hidden h-[1px] w-full bg-[#E5E7EE]" aria-hidden="true" />
+
             {/* RIGHT COLUMN: 02 I produce print */}
-            <div className="p-8 sm:p-10 lg:p-12 flex flex-col justify-between bg-white">
+            <div className="w-full md:w-1/2 p-[40px] sm:p-[64px] flex flex-col justify-between hover:bg-[#06B6D4]/[0.02] transition-colors duration-200">
               <div>
-                <span className="text-[11px] font-bold text-[#5747E8] tracking-wider block mb-3">
+                <span className="text-[0.6875rem] font-bold text-[#5747E8] tracking-[0.10em] uppercase block mb-4">
                   02
                 </span>
-                <h3 className="text-[1.5rem] font-bold text-[#0B1020] leading-snug tracking-tight">
+                <h3 className="text-[1.75rem] font-[650] text-[#0B1020] leading-[1.15] tracking-[-0.02em]">
                   I produce print.
                 </h3>
-                <p className="mt-2.5 body-normal">
-                  For independent manufacturers interested in suitable commercial production opportunities.
+                <p className="mt-3 text-[1.0625rem] leading-[1.65] text-[#596174]">
+                  For independent manufacturers interested in suitable commercial opportunities.
                 </p>
               </div>
 
-              <div className="mt-8 pt-2">
+              <div className="mt-10">
                 <Link
                   href="/partner-network"
-                  className="action-text-link group"
+                  className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#5747E8] hover:text-[#4C3DD6] transition-colors group"
                 >
                   <span>Discuss partnering</span>
                   <svg
-                    className="size-[13px] transition-transform duration-180 group-hover:translate-x-0.5"
+                    className="size-[13px] transition-transform duration-200 group-hover:translate-x-0.5"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -101,13 +110,6 @@ export function HomePartners() {
                     <path d="m9 18 6-6-6-6" />
                   </svg>
                 </Link>
-              </div>
-            </div>
-
-            {/* Central 8px Brand Node exactly on the 1px divider */}
-            <div className="hidden md:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 items-center justify-center pointer-events-none z-10" aria-hidden="true">
-              <div className="size-5 rounded-full bg-white border border-[#E7E9F0] flex items-center justify-center shadow-xs">
-                <span className="size-2 rounded-full bg-[#5747E8]" />
               </div>
             </div>
 

@@ -280,8 +280,39 @@ body {
   animation: ctaGradientFlow 12s ease-in-out infinite;
 }
 
-.animate-signature-pulse {
-  animation: singleSignaturePulse 7.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+@keyframes routePulse {
+  0% { left: 0%; opacity: 0; }
+  12% { opacity: 1; }
+  75% { opacity: 1; }
+  85% { left: 100%; opacity: 0; }
+  100% { left: 100%; opacity: 0; }
+}
+.animate-route-pulse {
+  animation: routePulse 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes sectionReveal {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-section-reveal {
+  animation: sectionReveal 420ms ease-out forwards;
+}
+
+@keyframes stepReveal {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-step-reveal {
+  animation: stepReveal 420ms ease-out forwards;
+}
+
+@keyframes routeFill {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+.animate-route-fill {
+  animation: routeFill 800ms ease-out forwards;
 }
 
 @media (prefers-reduced-motion: reduce) {
