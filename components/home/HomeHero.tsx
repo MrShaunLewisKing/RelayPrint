@@ -18,7 +18,7 @@ export function HomeHero() {
         <div className="bg-linear-to-tl from-[#5747E8]/10 via-[#06B6D4]/5 to-transparent blur-3xl w-[1080px] h-[600px] rounded-full-s-full opacity-60" />
       </div>
 
-      <div className="relative z-10 max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-14 sm:pt-[112px] sm:pb-0 text-center animate-section-reveal">
+      <div className="relative z-10 max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-[80px] sm:pb-[56px] text-center animate-section-reveal">
         {/* Main Headline */}
         <h1 className="block max-w-[900px] mx-auto text-[clamp(4rem,6.2vw,5.75rem)] font-[750] leading-[0.94] tracking-[-0.045em]">
           <span className="block text-[#0B1020]">Print demand.</span>
@@ -28,13 +28,13 @@ export function HomeHero() {
         </h1>
 
         {/* Hero Copy */}
-        <p className="mt-6 max-w-[620px] mx-auto text-[1.0625rem] leading-[1.65] text-[#596174]">
+        <p className="mt-5 max-w-[620px] mx-auto text-[1.0625rem] leading-[1.65] text-[#596174]">
           PrintExchange connects commercial print requirements with suitable independent
           manufacturing capacity and coordinates the route into production.
         </p>
 
         {/* Hero Actions */}
-        <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-6">
+        <div className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-6">
           <Link
             href="/how-it-works"
             className="inline-flex justify-center items-center h-[42px] px-[18px] text-[13px] font-semibold rounded-xl bg-[#5747E8] text-white hover:bg-[#4C3DD6] focus:outline-hidden transition-colors shadow-2xs group"
@@ -65,7 +65,7 @@ export function HomeHero() {
         </div>
 
         {/* SIGNATURE EXCHANGE ROUTE & NODE SYSTEM */}
-        <div className="mt-16 sm:mt-[96px] pb-12 max-w-[660px] mx-auto">
+        <div className="mt-12 max-w-[660px] mx-auto">
           {/* Desktop & Tablet Unified Horizontal Rail */}
           <div className="hidden sm:block relative px-4">
             
@@ -81,7 +81,7 @@ export function HomeHero() {
               
               {/* Left Node: PRINT DEMAND */}
               <div className="flex flex-col items-center text-center">
-                <div className="size-[17px] rounded-full bg-white flex items-center justify-center mb-4">
+                <div className="size-[17px] rounded-full bg-white flex items-center justify-center mb-3">
                   <span className="size-2 rounded-full bg-[#5747E8]" />
                 </div>
                 <span className="text-[0.6875rem] font-bold text-[#0B1020] tracking-[0.10em] uppercase">
@@ -94,7 +94,7 @@ export function HomeHero() {
 
               {/* Centre Node: PRINTEXCHANGE */}
               <div className="flex flex-col items-center text-center">
-                <div className="size-[17px] rounded-full bg-white flex items-center justify-center mb-4">
+                <div className="size-[17px] rounded-full bg-white flex items-center justify-center mb-3">
                   <span className="size-3.5 rounded-full bg-linear-to-tr from-[#5747E8] to-[#2563EB] shadow-sm" />
                 </div>
                 <span className="text-[0.6875rem] font-bold text-[#0B1020] tracking-[0.10em] uppercase">
@@ -107,7 +107,7 @@ export function HomeHero() {
 
               {/* Right Node: PRODUCTION */}
               <div className="flex flex-col items-center text-center">
-                <div className="size-[17px] rounded-full bg-white flex items-center justify-center mb-4">
+                <div className="size-[17px] rounded-full bg-white flex items-center justify-center mb-3">
                   <span className="size-2 rounded-full bg-[#06B6D4]" />
                 </div>
                 <span className="text-[0.6875rem] font-bold text-[#0B1020] tracking-[0.10em] uppercase">

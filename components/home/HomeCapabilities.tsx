@@ -7,27 +7,27 @@ import Link from 'next/link';
 
 export function HomeCapabilities() {
   return (
-    <section className="bg-white py-[64px] sm:py-[104px] animate-section-reveal" aria-label="Print Capabilities">
+    <section className="bg-white pt-[64px] pb-[72px] sm:pt-[72px] sm:pb-[80px] animate-section-reveal" aria-label="Print Capabilities">
       <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="max-w-2xl pb-[40px]">
+        <div className="max-w-2xl pb-[32px]">
           <span className="text-[0.6875rem] font-bold text-[#5747E8] tracking-[0.10em] uppercase block mb-4">
             PRINT CAPABILITIES
           </span>
           <h2 className="text-[clamp(2.5rem,4vw,3.6rem)] font-bold leading-[1.02] tracking-[-0.035em] text-[#0B1020]">
             Print comes in many forms.
           </h2>
-          <p className="mt-4 text-[1.0625rem] leading-[1.65] text-[#596174]">
+          <p className="mt-3 text-[1.0625rem] leading-[1.65] text-[#596174]">
             Different requirements call for different production setups.
           </p>
         </div>
 
         {/* 12-Column Asymmetric Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-5">
           
           {/* TOP LEFT: Commercial documents (Span 7) - VIOLET */}
-          <div className="md:col-span-7 relative overflow-hidden rounded-[20px] p-[32px] sm:p-[36px] bg-linear-to-br from-[#5747E8]/[0.04] via-white to-transparent border border-[#E7E9F0] hover:-translate-y-[2px] hover:border-[#5747E8]/30 hover:shadow-[0_14px_40px_rgba(11,16,32,0.06)] transition-all duration-200 group flex flex-col justify-between min-h-[260px]">
+          <div className="md:col-span-7 relative overflow-hidden rounded-[20px] p-[24px] sm:p-[28px] bg-linear-to-br from-[#5747E8]/[0.04] via-white to-transparent border border-[#E7E9F0] hover:-translate-y-[2px] hover:border-[#5747E8]/30 hover:shadow-[0_14px_40px_rgba(11,16,32,0.06)] transition-all duration-200 group flex flex-col justify-between min-h-[200px]">
             {/* Geometric Detail: Layered sheet lines */}
             <div
               className="absolute top-6 right-6 pointer-events-none opacity-20 group-hover:opacity-40 group-hover:-translate-y-1 transition-all duration-200 text-[#5747E8]"
@@ -39,10 +39,10 @@ export function HomeCapabilities() {
               </svg>
             </div>
 
-            <div className="relative z-10">
-              <div className="w-[44px] h-[44px] rounded-xl bg-[#5747E8]/10 text-[#5747E8] flex items-center justify-center mb-6 shadow-2xs group-hover:-translate-y-[2px] transition-transform duration-200">
+            <div className="relative z-10 flex flex-col h-full">
+              <div className="w-[40px] h-[40px] rounded-xl bg-[#5747E8]/10 text-[#5747E8] flex items-center justify-center mb-5 shadow-2xs group-hover:-translate-y-[2px] transition-transform duration-200">
                 <svg
-                  className="size-6"
+                  className="size-5"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -58,17 +58,19 @@ export function HomeCapabilities() {
                   <path d="M15 2v5h5" />
                 </svg>
               </div>
-              <h3 className="text-[1.75rem] font-[650] text-[#0B1020] leading-[1.15] tracking-[-0.02em]">
-                Commercial documents
-              </h3>
-              <p className="mt-2 text-[0.9375rem] leading-[1.65] text-[#596174] max-w-lg">
-                Reports, manuals, booklets and multi-page business print.
-              </p>
+              <div className="mt-auto">
+                <h3 className="text-[1.75rem] font-[650] text-[#0B1020] leading-[1.15] tracking-[-0.02em]">
+                  Commercial documents
+                </h3>
+                <p className="mt-2 text-[0.9375rem] leading-[1.65] text-[#596174] max-w-lg">
+                  Reports, manuals, booklets and multi-page business print.
+                </p>
+              </div>
             </div>
           </div>
 
           {/* TOP RIGHT: Promotional print (Span 5) - CYAN */}
-          <div className="md:col-span-5 relative overflow-hidden rounded-[20px] p-[28px] sm:p-[32px] bg-linear-to-br from-[#06B6D4]/[0.04] via-white to-transparent border border-[#E7E9F0] hover:-translate-y-[2px] hover:border-[#06B6D4]/30 hover:shadow-[0_14px_40px_rgba(11,16,32,0.06)] transition-all duration-200 group flex flex-col justify-between min-h-[260px]">
+          <div className="md:col-span-5 relative overflow-hidden rounded-[20px] p-[22px] sm:p-[24px] bg-linear-to-br from-[#06B6D4]/[0.04] via-white to-transparent border border-[#E7E9F0] hover:-translate-y-[2px] hover:border-[#06B6D4]/30 hover:shadow-[0_14px_40px_rgba(11,16,32,0.06)] transition-all duration-200 group flex flex-col justify-between min-h-[180px]">
             {/* Geometric Detail: Page outline */}
             <div
               className="absolute top-5 right-5 pointer-events-none opacity-20 group-hover:opacity-40 group-hover:-translate-y-1 transition-all duration-200 text-[#06B6D4]"
@@ -79,8 +81,8 @@ export function HomeCapabilities() {
               </svg>
             </div>
 
-            <div className="relative z-10">
-              <div className="w-[38px] h-[38px] rounded-[10px] bg-[#06B6D4]/10 text-[#06B6D4] flex items-center justify-center mb-6 shadow-2xs group-hover:-translate-y-[2px] transition-transform duration-200">
+            <div className="relative z-10 flex flex-col h-full">
+              <div className="w-[36px] h-[36px] rounded-[10px] bg-[#06B6D4]/10 text-[#06B6D4] flex items-center justify-center mb-5 shadow-2xs group-hover:-translate-y-[2px] transition-transform duration-200">
                 <svg
                   className="size-[1.15rem]"
                   xmlns="http://www.w3.org/2000/svg"
@@ -98,17 +100,19 @@ export function HomeCapabilities() {
                   <path d="M9 21V9" />
                 </svg>
               </div>
-              <h3 className="text-[1.25rem] font-[650] text-[#0B1020] leading-[1.2]">
-                Promotional print
-              </h3>
-              <p className="mt-2 text-[0.9375rem] leading-[1.65] text-[#596174]">
-                Leaflets, flyers and campaign material.
-              </p>
+              <div className="mt-auto">
+                <h3 className="text-[1.25rem] font-[650] text-[#0B1020] leading-[1.2]">
+                  Promotional print
+                </h3>
+                <p className="mt-2 text-[0.9375rem] leading-[1.65] text-[#596174]">
+                  Leaflets, flyers and campaign material.
+                </p>
+              </div>
             </div>
           </div>
 
           {/* BOTTOM LEFT: Business stationery (Span 5) - MAGENTA */}
-          <div className="md:col-span-5 relative overflow-hidden rounded-[20px] p-[28px] sm:p-[32px] bg-linear-to-br from-[#D946EF]/[0.04] via-white to-transparent border border-[#E7E9F0] hover:-translate-y-[2px] hover:border-[#D946EF]/30 hover:shadow-[0_14px_40px_rgba(11,16,32,0.06)] transition-all duration-200 group flex flex-col justify-between min-h-[260px]">
+          <div className="md:col-span-5 relative overflow-hidden rounded-[20px] p-[22px] sm:p-[24px] bg-linear-to-br from-[#D946EF]/[0.04] via-white to-transparent border border-[#E7E9F0] hover:-translate-y-[2px] hover:border-[#D946EF]/30 hover:shadow-[0_14px_40px_rgba(11,16,32,0.06)] transition-all duration-200 group flex flex-col justify-between min-h-[180px]">
             {/* Geometric Detail: Registration marks */}
             <div
               className="absolute top-5 right-5 pointer-events-none opacity-20 group-hover:opacity-40 group-hover:rotate-45 transition-all duration-300 text-[#D946EF]"
@@ -120,8 +124,8 @@ export function HomeCapabilities() {
               </svg>
             </div>
 
-            <div className="relative z-10">
-              <div className="w-[38px] h-[38px] rounded-[10px] bg-[#D946EF]/10 text-[#D946EF] flex items-center justify-center mb-6 shadow-2xs group-hover:-translate-y-[2px] transition-transform duration-200">
+            <div className="relative z-10 flex flex-col h-full">
+              <div className="w-[36px] h-[36px] rounded-[10px] bg-[#D946EF]/10 text-[#D946EF] flex items-center justify-center mb-5 shadow-2xs group-hover:-translate-y-[2px] transition-transform duration-200">
                 <svg
                   className="size-[1.15rem]"
                   xmlns="http://www.w3.org/2000/svg"
@@ -138,17 +142,19 @@ export function HomeCapabilities() {
                   <line x1="2" x2="22" y1="10" y2="10" />
                 </svg>
               </div>
-              <h3 className="text-[1.25rem] font-[650] text-[#0B1020] leading-[1.2]">
-                Business stationery
-              </h3>
-              <p className="mt-2 text-[0.9375rem] leading-[1.65] text-[#596174]">
-                Letterheads, cards and everyday branded print.
-              </p>
+              <div className="mt-auto">
+                <h3 className="text-[1.25rem] font-[650] text-[#0B1020] leading-[1.2]">
+                  Business stationery
+                </h3>
+                <p className="mt-2 text-[0.9375rem] leading-[1.65] text-[#596174]">
+                  Letterheads, cards and everyday branded print.
+                </p>
+              </div>
             </div>
           </div>
 
           {/* BOTTOM RIGHT: Specialist requirements (Span 7) - AMBER */}
-          <div className="md:col-span-7 relative overflow-hidden rounded-[20px] p-[32px] sm:p-[36px] bg-linear-to-br from-[#F59E0B]/[0.04] via-white to-transparent border border-[#E7E9F0] hover:-translate-y-[2px] hover:border-[#F59E0B]/30 hover:shadow-[0_14px_40px_rgba(11,16,32,0.06)] transition-all duration-200 group flex flex-col justify-between min-h-[260px]">
+          <div className="md:col-span-7 relative overflow-hidden rounded-[20px] p-[24px] sm:p-[28px] bg-linear-to-br from-[#F59E0B]/[0.04] via-white to-transparent border border-[#E7E9F0] hover:-translate-y-[2px] hover:border-[#F59E0B]/30 hover:shadow-[0_14px_40px_rgba(11,16,32,0.06)] transition-all duration-200 group flex flex-col justify-between min-h-[200px]">
             {/* Geometric Detail: Crop corner */}
             <div
               className="absolute top-6 right-6 pointer-events-none opacity-20 group-hover:opacity-40 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-200 text-[#F59E0B]"
@@ -160,10 +166,10 @@ export function HomeCapabilities() {
               </svg>
             </div>
 
-            <div className="relative z-10">
-              <div className="w-[44px] h-[44px] rounded-xl bg-[#F59E0B]/10 text-[#F59E0B] flex items-center justify-center mb-6 shadow-2xs group-hover:-translate-y-[2px] transition-transform duration-200">
+            <div className="relative z-10 flex flex-col h-full">
+              <div className="w-[40px] h-[40px] rounded-xl bg-[#F59E0B]/10 text-[#F59E0B] flex items-center justify-center mb-5 shadow-2xs group-hover:-translate-y-[2px] transition-transform duration-200">
                 <svg
-                  className="size-6"
+                  className="size-5"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -179,19 +185,21 @@ export function HomeCapabilities() {
                   <path d="m22 17.65-8.58 3.9a2 2 0 0 1-1.66 0L2.6 17.65" />
                 </svg>
               </div>
-              <h3 className="text-[1.75rem] font-[650] text-[#0B1020] leading-[1.15] tracking-[-0.02em]">
-                Specialist requirements
-              </h3>
-              <p className="mt-2 text-[0.9375rem] leading-[1.65] text-[#596174] max-w-lg">
-                Jobs involving additional finishing or less-standard production needs.
-              </p>
+              <div className="mt-auto">
+                <h3 className="text-[1.75rem] font-[650] text-[#0B1020] leading-[1.15] tracking-[-0.02em]">
+                  Specialist requirements
+                </h3>
+                <p className="mt-2 text-[0.9375rem] leading-[1.65] text-[#596174] max-w-lg">
+                  Jobs involving additional finishing or less-standard production needs.
+                </p>
+              </div>
             </div>
           </div>
 
         </div>
 
         {/* Section Action at Bottom Right */}
-        <div className="mt-10 flex justify-end">
+        <div className="mt-7 flex justify-end">
           <Link
             href="/capabilities"
             className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#5747E8] hover:text-[#4C3DD6] transition-colors group"

@@ -8,18 +8,18 @@ import Link from 'next/link';
 export function HomePartners() {
   return (
     <section
-      className="bg-[#F7F6FF] py-[96px] sm:py-[112px] animate-section-reveal"
+      className="bg-[#F7F6FF] pt-[72px] pb-[48px] sm:pt-[84px] sm:pb-[64px] animate-section-reveal"
       aria-label="Audiences"
     >
       <div className="max-w-[1120px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-[64px]">
+        <div className="text-center max-w-2xl mx-auto mb-[32px] sm:mb-[36px]">
           <h2 className="text-[clamp(2.5rem,4vw,3.6rem)] font-bold leading-[1.02] tracking-[-0.035em] text-[#0B1020]">
             Built for both sides
             <span className="block text-[#0B1020]">of commercial print.</span>
           </h2>
-          <p className="mt-6 text-[1.0625rem] leading-[1.65] text-[#596174]">
+          <p className="mt-4 text-[1.0625rem] leading-[1.65] text-[#596174]">
             PrintExchange works with organisations that need print produced and independent businesses able to produce it.
           </p>
         </div>
@@ -29,20 +29,20 @@ export function HomePartners() {
           <div className="flex flex-col md:flex-row relative">
             
             {/* LEFT COLUMN: 01 I need print produced */}
-            <div className="w-full md:w-1/2 p-[40px] sm:p-[64px] flex flex-col justify-between hover:bg-[#5747E8]/[0.02] transition-colors duration-200">
+            <div className="w-full md:w-1/2 p-[28px] sm:p-[32px] flex flex-col justify-between hover:bg-[#5747E8]/[0.02] transition-colors duration-200">
               <div>
-                <span className="text-[0.6875rem] font-bold text-[#5747E8] tracking-[0.10em] uppercase block mb-4">
+                <span className="text-[0.6875rem] font-bold text-[#5747E8] tracking-[0.10em] uppercase block mb-3">
                   01
                 </span>
                 <h3 className="text-[1.75rem] font-[650] text-[#0B1020] leading-[1.15] tracking-[-0.02em]">
                   I need print produced.
                 </h3>
-                <p className="mt-3 text-[1.0625rem] leading-[1.65] text-[#596174]">
+                <p className="mt-2.5 text-[1.0625rem] leading-[1.65] text-[#596174]">
                   For platforms, brokers and organisations managing commercial print requirements.
                 </p>
               </div>
 
-              <div className="mt-10">
+              <div className="mt-6">
                 <Link
                   href="/contact"
                   className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#5747E8] hover:text-[#4C3DD6] transition-colors group"
@@ -76,20 +76,20 @@ export function HomePartners() {
             <div className="md:hidden h-[1px] w-full bg-[#E5E7EE]" aria-hidden="true" />
 
             {/* RIGHT COLUMN: 02 I produce print */}
-            <div className="w-full md:w-1/2 p-[40px] sm:p-[64px] flex flex-col justify-between hover:bg-[#06B6D4]/[0.02] transition-colors duration-200">
+            <div className="w-full md:w-1/2 p-[28px] sm:p-[32px] flex flex-col justify-between hover:bg-[#06B6D4]/[0.02] transition-colors duration-200">
               <div>
-                <span className="text-[0.6875rem] font-bold text-[#5747E8] tracking-[0.10em] uppercase block mb-4">
+                <span className="text-[0.6875rem] font-bold text-[#5747E8] tracking-[0.10em] uppercase block mb-3">
                   02
                 </span>
                 <h3 className="text-[1.75rem] font-[650] text-[#0B1020] leading-[1.15] tracking-[-0.02em]">
                   I produce print.
                 </h3>
-                <p className="mt-3 text-[1.0625rem] leading-[1.65] text-[#596174]">
+                <p className="mt-2.5 text-[1.0625rem] leading-[1.65] text-[#596174]">
                   For independent manufacturers interested in suitable commercial opportunities.
                 </p>
               </div>
 
-              <div className="mt-10">
+              <div className="mt-6">
                 <Link
                   href="/partner-network"
                   className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#5747E8] hover:text-[#4C3DD6] transition-colors group"

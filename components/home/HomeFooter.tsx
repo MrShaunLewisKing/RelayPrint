@@ -16,9 +16,9 @@ export function HomeFooter() {
         PRINTEXCHANGE
       </div>
 
-      <div className="relative z-10 max-w-[1120px] py-14 px-4 sm:px-6 lg:px-8 lg:pt-18 mx-auto">
+      <div className="relative z-10 max-w-[1120px] pt-[64px] pb-[50px] lg:pt-[72px] lg:pb-[60px] px-4 sm:px-6 lg:px-8 mx-auto">
         {/* 4-Area Navigation Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 pb-12 border-b border-[#161B2E]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 pb-[40px] border-b border-[#161B2E]">
           
           {/* Brand Column (5 cols) */}
           <div className="lg:col-span-5 space-y-3">

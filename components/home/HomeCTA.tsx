@@ -7,8 +7,8 @@ import Link from 'next/link';
 
 export function HomeCTA() {
   return (
-    <section className="px-4 sm:px-6 lg:px-8 py-[64px] sm:py-[72px] bg-white animate-section-reveal" aria-label="Contact Call to Action">
-      <div className="relative overflow-hidden max-w-[980px] mx-auto p-[48px] sm:py-[72px] sm:px-[80px] rounded-[24px] bg-[#070B18] text-white text-center shadow-[0_20px_60px_rgba(11,16,32,0.15)] flex flex-col justify-center items-center">
+    <section className="px-4 sm:px-6 lg:px-8 pt-[48px] pb-[56px] sm:pt-[56px] sm:pb-[64px] bg-white animate-section-reveal" aria-label="Contact Call to Action">
+      <div className="relative overflow-hidden max-w-[980px] mx-auto p-[40px] sm:py-[56px] sm:px-[64px] rounded-[24px] bg-[#070B18] text-white text-center shadow-[0_20px_60px_rgba(11,16,32,0.15)] flex flex-col justify-center items-center">
         
         {/* Subtle Violet -> Blue Soft Light behind heading */}
         <div
@@ -27,10 +27,10 @@ export function HomeCTA() {
           <h2 className="text-[clamp(2.5rem,4vw,3.6rem)] font-bold leading-[1.02] tracking-[-0.035em] text-[#FFFFFF]">
             Let&apos;s talk.
           </h2>
-          <p className="mt-4 text-[1.0625rem] leading-[1.65] text-[#A9B1C1]">
+          <p className="mt-3 text-[1.0625rem] leading-[1.65] text-[#A9B1C1]">
             Have something to discuss with PrintExchange?
           </p>
-          <div className="mt-10 flex justify-center">
+          <div className="mt-6 flex justify-center">
             {/* Final Filled Button */}
             <Link
               href="/contact"
